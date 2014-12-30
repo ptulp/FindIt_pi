@@ -126,30 +126,16 @@ After installing Packages create the Plugin package.
 ```
 make create-pkg
 ```
-This will create the FindIt-Plugin_1.0.pkg file in the build directory.
+This will create the FindIt-Plugin_1.XXXX.pkg file in the build directory.
 Executing this file will install the plugin.
 
-Building zip files
-==================
-
-I can't find any way to successfully build a zip file with cmake, all of
-the online documentation about how to do this appears to be incorrect.
-
-On Linux you can use the makezip.sh script to make the required zip files.
-They can be installed using the instructions in the "Install Additional Files"
-section below.
-
-These zip files will be distributed with the plugin when we make a release.
-
-The language files are included with the packages, the layouts and the help
-files are not and will need to be separately installed.
 
 Enable the Plugin
 =================
 
 * Start OpenCPN
 * Select Options from the toolbar (spanner icon) and go to the Plugins tab.
-* Select the Logbook plugin and click Enable to enable the plugin.
+* Select the FindIt plugin and click Enable to enable the plugin.
 
 
 License
