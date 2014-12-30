@@ -40,9 +40,8 @@
 #define     PLUGIN_VERSION_MINOR    0
 
 #define     MY_API_VERSION_MAJOR    1
-//#define     MY_API_VERSION_MINOR    5  // for OpenCPN 2.5
-#define     MY_API_VERSION_MINOR    6  // for OpenCPN 2.6.xxxx Beta
-#include "../../../include/ocpn_plugin.h"
+#define     MY_API_VERSION_MINOR    7  // for OpenCPN 3.x
+#include "ocpn_plugin.h"
 #include "findit.h"
 
 class MainDialog;
@@ -52,7 +51,7 @@ class findit_pi;
 //----------------------------------------------------------------------------------------------------------
 
 
-class findit_pi : public opencpn_plugin_16
+class findit_pi : public opencpn_plugin_17
 {
 public:
       findit_pi(void *ppimgr);//:opencpn_plugin(ppimgr){}
@@ -74,6 +73,7 @@ public:
 
 //    The optional method overrides
   	  void OnToolbarToolCallback(int id);
+	  void SetColorScheme(PI_ColorScheme cs);
 	  void SetPluginMessage(wxString &message_id, wxString &message_body);
 	  void ShowPreferencesDialog( wxWindow* parent );
       void UpdateAuiStatus(void);

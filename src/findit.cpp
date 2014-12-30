@@ -1,4 +1,4 @@
-﻿/*********************************************************************
+/*********************************************************************
  * Name:      	main.cpp
  * Purpose:   	Implements simple wxWidgets application with GUI
  * 				created using wxFormBuilder.
@@ -726,7 +726,7 @@ int MainDialog::addLineMaterial()
 	combo5 = new wxGridCellChoiceEditor(location6,false);	
 	comboUnit = new wxGridCellChoiceEditor(unit,false);
 	boolEditor = new wxGridCellBoolEditor();
-	comboPriority = new wxGridCellChoiceEditor(prioritystr,false);
+//	comboPriority = new wxGridCellChoiceEditor(prioritystr,false);
 
 	if(!pPlugin->buyNo)
 		boolEditor->UseStringValues(_("Yes"));
@@ -737,7 +737,7 @@ int MainDialog::addLineMaterial()
 	this->m_gridMaterial->AppendRows();
 
 	this->m_gridMaterial->SetCellEditor(lastRow,BUY,boolEditor);
-	this->m_gridMaterial->SetCellEditor(lastRow,PRIORITY,comboPriority);
+	this->m_gridMaterial->SetCellEditor(lastRow,PRIORITY,new wxGridCellChoiceEditor(prioritystr,false));
 	this->m_gridMaterial->SetCellEditor(lastRow,UNIT,comboUnit);	
 	this->m_gridMaterial->SetCellEditor(lastRow,LOC1,combo);
 	this->m_gridMaterial->SetCellEditor(lastRow,LOC2,combo1);

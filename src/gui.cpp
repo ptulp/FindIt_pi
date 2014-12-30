@@ -74,7 +74,7 @@ FindItDialog::FindItDialog( wxWindow* parent, wxWindowID id, const wxString& tit
 	m_gridMaterial->SetColLabelValue( 0, _("Buy") );
 	m_gridMaterial->SetColLabelValue( 1, _("Priority") );
 	m_gridMaterial->SetColLabelValue( 2, _("Quota") );
-	m_gridMaterial->SetColLabelValue( 3, _("Actuell") );
+	m_gridMaterial->SetColLabelValue( 3, _("Actual") );
 	m_gridMaterial->SetColLabelValue( 4, _("Balance") );
 	m_gridMaterial->SetColLabelValue( 5, _("Unit") );
 	m_gridMaterial->SetColLabelValue( 6, _("Text") );
@@ -159,7 +159,7 @@ FindItDialog::FindItDialog( wxWindow* parent, wxWindowID id, const wxString& tit
 	m_gridFood->SetColLabelValue( 0, _("Buy") );
 	m_gridFood->SetColLabelValue( 1, _("Priority") );
 	m_gridFood->SetColLabelValue( 2, _("Quota") );
-	m_gridFood->SetColLabelValue( 3, _("Actuell") );
+	m_gridFood->SetColLabelValue( 3, _("Actual") );
 	m_gridFood->SetColLabelValue( 4, _("Balance") );
 	m_gridFood->SetColLabelValue( 5, _("Unit") );
 	m_gridFood->SetColLabelValue( 6, _("Text") );
@@ -384,19 +384,19 @@ OptionsDialog::OptionsDialog( wxWindow* parent, findit_pi* p, wxWindowID id, con
 	
 	wxString m_radioBox1Choices[] = { _("blank"), _T("\"0\"") };
 	int m_radioBox1NChoices = sizeof( m_radioBox1Choices ) / sizeof( wxString );
-	m_radioBox1 = new wxRadioBox( this, wxID_ANY, _("If Value of Column \"Balance\" = 0, set Value to"), wxDefaultPosition, wxDefaultSize, m_radioBox1NChoices, m_radioBox1Choices, 1, wxRA_SPECIFY_ROWS|wxRA_USE_CHECKBOX );
+	m_radioBox1 = new wxRadioBox( this, wxID_ANY, _("If Value of Column \"Balance\" = 0, set Value to"), wxDefaultPosition, wxDefaultSize, m_radioBox1NChoices, m_radioBox1Choices, 1, wxRA_SPECIFY_ROWS );
 	m_radioBox1->SetSelection( 0 );
 	fgSizer1->Add( m_radioBox1, 0, wxALL, 5 );
 	
 	wxString m_radioBox11Choices[] = { _("blank"), _("\"No\"") };
 	int m_radioBox11NChoices = sizeof( m_radioBox11Choices ) / sizeof( wxString );
-	m_radioBox11 = new wxRadioBox( this, wxID_ANY, _("If Value of Column \"Buy\" = No, set Value to"), wxDefaultPosition, wxDefaultSize, m_radioBox11NChoices, m_radioBox11Choices, 1, wxRA_SPECIFY_ROWS|wxRA_USE_CHECKBOX );
+	m_radioBox11 = new wxRadioBox( this, wxID_ANY, _("If Value of Column \"Buy\" = No, set Value to"), wxDefaultPosition, wxDefaultSize, m_radioBox11NChoices, m_radioBox11Choices, 1, wxRA_SPECIFY_ROWS );
 	m_radioBox11->SetSelection( 0 );
 	fgSizer1->Add( m_radioBox11, 0, wxALL, 5 );
 	
 	wxString m_radioBox5Choices[] = { _("Yes"), _("No") };
 	int m_radioBox5NChoices = sizeof( m_radioBox5Choices ) / sizeof( wxString );
-	m_radioBox5 = new wxRadioBox( this, wxID_ANY, _("Use last row values  as default for new row"), wxDefaultPosition, wxDefaultSize, m_radioBox5NChoices, m_radioBox5Choices, 1, wxRA_SPECIFY_ROWS|wxRA_USE_CHECKBOX );
+	m_radioBox5 = new wxRadioBox( this, wxID_ANY, _("Use last row values  as default for new row"), wxDefaultPosition, wxDefaultSize, m_radioBox5NChoices, m_radioBox5Choices, 1, wxRA_SPECIFY_ROWS );
 	m_radioBox5->SetSelection( 0 );
 	fgSizer1->Add( m_radioBox5, 0, wxALL, 5 );
 	
