@@ -6,30 +6,31 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: findit_pi 2.6.1729\n"
+"Project-Id-Version: findit_pi 1.1001\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-06-04 20:21+0200\n"
+"POT-Creation-Date: 2015-03-18 17:03+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=CHARSET\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: src/findit_pi.cpp:98 src/findit_pi.cpp:159 src/findit_pi.cpp:202
-#: src/findit_pi.cpp:240 src/gui.h:101
+#: src/findit_pi.cpp:96 src/findit_pi.cpp:156 src/findit_pi.cpp:207
+#: src/findit_pi.cpp:248 src/gui.h:185
 msgid "FindIt"
 msgstr ""
 
-#: src/findit_pi.cpp:164
+#: src/findit_pi.cpp:161
 msgid "Stowage PlugIn for OpenCPN"
 msgstr ""
 
-#: src/findit_pi.cpp:169
+#: src/findit_pi.cpp:166
 msgid "Stowage PlugIn for OpenCPN\n"
 msgstr ""
 
-#: src/gui.h:130
+#: src/gui.h:214
 msgid "FindIt Options"
 msgstr ""
 
@@ -58,7 +59,7 @@ msgstr ""
 #: src/gui.cpp:43 src/gui.cpp:128
 msgid ""
 "If the logbook-plugin is installed send a list\n"
-"with checked items to 'Logbook/Maintenace/Buy Parts'"
+"with checked items to 'Logbook/Maintenance/Buy Parts'"
 msgstr ""
 
 #: src/gui.cpp:74 src/gui.cpp:159
@@ -74,7 +75,7 @@ msgid "Quota"
 msgstr ""
 
 #: src/gui.cpp:77 src/gui.cpp:162
-msgid "Actuell"
+msgid "Actual"
 msgstr ""
 
 #: src/gui.cpp:78 src/gui.cpp:163
@@ -142,5 +143,5 @@ msgid "No"
 msgstr ""
 
 #: src/gui.cpp:399
-msgid "Use last row values  as default for new row"
+msgid "Use last row values as default for new row"
 msgstr ""

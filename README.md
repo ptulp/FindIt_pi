@@ -9,9 +9,7 @@ This plugin can work together with the LogbookKonni plugin.
 If there are items ready for buying and the Buy It button is pushed, the item(s) 
 will be transferred to the Maintenance/BuyParts page on the Logbook plugin.
 
-Del   
-SV Chiara Stella   
-http://sailchiarastella.blogspot.com/
+Peter
 
 Binary Distribution
 ===================

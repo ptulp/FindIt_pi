@@ -1,13 +1,11 @@
 /******************************************************************************
- * $Id: findit_pi.h,v 1.8 2010/06/21 01:54:37 bdbcat Exp $
  *
  * Project:  OpenCPN
- * Purpose:  DEMO Plugin
+ * Purpose:  Findit Plugin
  * Author:   David Register
  *
  ***************************************************************************
- *   Copyright (C) 2010 by David S. Register   *
- *   bdbcat@yahoo.com   *
+ *   Copyright (C) 2010 by David S. Register                               *
  *                                                                         *
  *   This program is free software; you can redistribute it and/or modify  *
  *   it under the terms of the GNU General Public License as published by  *
@@ -22,7 +20,7 @@
  *   You should have received a copy of the GNU General Public License     *
  *   along with this program; if not, write to the                         *
  *   Free Software Foundation, Inc.,                                       *
- *   59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.             *
+ *   51 Franklin Street, Fifth Floor, Boston, MA 02110-1301,  USA.         *
  ***************************************************************************
  */
 #define FINDIT_TOOL_POSITION -1
@@ -33,14 +31,14 @@
 #include "wx/wxprec.h"
 
 #ifndef  WX_PRECOMP
-  #include "wx/wx.h"
+#include "wx/wx.h"
 #endif //precompiled headers
 
-#define     PLUGIN_VERSION_MAJOR    1
-#define     PLUGIN_VERSION_MINOR    0
+#include "version.h"
 
 #define     MY_API_VERSION_MAJOR    1
-#define     MY_API_VERSION_MINOR    7  // for OpenCPN 3.x
+#define     MY_API_VERSION_MINOR    9  // for OpenCPN 3.x
+
 #include "ocpn_plugin.h"
 #include "findit.h"
 
@@ -51,56 +49,56 @@ class findit_pi;
 //----------------------------------------------------------------------------------------------------------
 
 
-class findit_pi : public opencpn_plugin_17
+class findit_pi : public opencpn_plugin_19
 {
 public:
-      findit_pi(void *ppimgr);//:opencpn_plugin(ppimgr){}
-	  ~findit_pi();
+    findit_pi(void *ppimgr);//:opencpn_plugin(ppimgr){}
+    ~findit_pi();
 
 //    The required PlugIn Methods
-      int Init(void);
-      bool DeInit(void);
+    int Init(void);
+    bool DeInit(void);
 
-      int GetAPIVersionMajor();
-      int GetAPIVersionMinor();
-      int GetPlugInVersionMajor();
-      int GetPlugInVersionMinor();
-	  wxBitmap* GetPlugInBitmap();
+    int GetAPIVersionMajor();
+    int GetAPIVersionMinor();
+    int GetPlugInVersionMajor();
+    int GetPlugInVersionMinor();
+    wxBitmap* GetPlugInBitmap();
 
-      wxString GetCommonName();
-      wxString GetShortDescription();
-      wxString GetLongDescription();
+    wxString GetCommonName();
+    wxString GetShortDescription();
+    wxString GetLongDescription();
 
 //    The optional method overrides
-  	  void OnToolbarToolCallback(int id);
-	  void SetColorScheme(PI_ColorScheme cs);
-	  void SetPluginMessage(wxString &message_id, wxString &message_body);
-	  void ShowPreferencesDialog( wxWindow* parent );
-      void UpdateAuiStatus(void);
-      
-	  void SetDefaults(void);
+    void OnToolbarToolCallback(int id);
+    void SetColorScheme(PI_ColorScheme cs);
+    void SetPluginMessage(wxString &message_id, wxString &message_body);
+    void ShowPreferencesDialog( wxWindow* parent );
+    void UpdateAuiStatus(void);
 
-	  bool isLogbookReady;
-	  bool isLogbookWindowShown;
+    void SetDefaults(void);
 
-	  int		buyNo;
-	  int		toBuyZero;
-	  int		lastRowDefault;
-	  bool		m_bFINDITShowIcon;
+    bool isLogbookReady;
+    bool isLogbookWindowShown;
+
+    int		buyNo;
+    int		toBuyZero;
+    int		lastRowDefault;
+    bool		m_bFINDITShowIcon;
 
 private:
-      wxWindow         *m_parent_window;
+    wxWindow         *m_parent_window;
 
-      MainDialog       *m_pFindItWindow;
-      wxAuiManager     *m_AUImgr;
-	  wxFileConfig     *m_pconfig;
-      int               m_show_id;
-      int               m_hide_id;
+    MainDialog       *m_pFindItWindow;
+    wxAuiManager     *m_AUImgr;
+    wxFileConfig     *m_pconfig;
+    int               m_show_id;
+    int               m_hide_id;
 
-	  int				m_leftclick_tool_id;
+    int				m_leftclick_tool_id;
 
-	  void				SaveConfig();
-	  void				LoadConfig();
+    void				SaveConfig();
+    void				LoadConfig();
 };
 
 
