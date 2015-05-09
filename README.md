@@ -100,6 +100,7 @@ cmake --build .
 Packaging
 =========
 
+###Packaging on Linux
 From inside the build directory, the following command will make packages for your
 current platform against the as-built code:
 
