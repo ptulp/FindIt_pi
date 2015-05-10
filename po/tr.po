@@ -5,53 +5,53 @@ msgstr ""
 "POT-Creation-Date: 2015-05-10 07:19-0500\n"
 "PO-Revision-Date: 2015-05-10 08:20-0400\n"
 "Last-Translator: nohal <pavel@kalian.cz>\n"
-"Language-Team: Danish\n"
-"Language: da_DK\n"
+"Language-Team: Turkish\n"
+"Language: tr_TR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n\n"
 "X-Generator: crowdin.com\n"
 "X-Crowdin-Project: opencpn\n"
-"X-Crowdin-Language: da\n"
+"X-Crowdin-Language: tr\n"
 "X-Crowdin-File: /plugins/FindIt_pi/po/findit_pi.pot\n"
 
 #: src/findit_pi.cpp:96 src/findit_pi.cpp:156 src/findit_pi.cpp:207
 #: src/findit_pi.cpp:248 src/gui.h:185
 msgid "FindIt"
-msgstr "FindIt"
+msgstr "AraBul"
 
 #: src/findit_pi.cpp:161
 msgid "Stowage PlugIn for OpenCPN"
-msgstr "Lagrings-Plug-in til OpenCPN"
+msgstr "OpenCPN için Depo Arama Eklentisi"
 
 #: src/findit_pi.cpp:166
 msgid "Stowage PlugIn for OpenCPN\n"
-msgstr "Lagrings-Plug-in til OpenCPN\n"
+msgstr "OpenCPN için Depo Arama Eklentisi\n"
 
 #: src/gui.h:214
 msgid "FindIt Options"
-msgstr "FindIt indstillinger"
+msgstr "AraBul Seçenekleri"
 
 #: src/gui.cpp:27 src/gui.cpp:112 src/gui.cpp:196 src/gui.cpp:248
 msgid "Add Line"
-msgstr "Tilføj Linje"
+msgstr "Satır Ekle"
 
 #: src/gui.cpp:28 src/gui.cpp:113
 msgid "Append a row\nDelete a row = Key <Del>"
-msgstr "Tilføj en række\nSlet en række = Tast <Del>"
+msgstr "Bir Satır getir\nBir satırı sil = Anahtar <Sil>"
 
 #: src/gui.cpp:32 src/gui.cpp:117
 msgid "Enter Searchstring:"
-msgstr "Indtast søgestreng"
+msgstr "Aranacak şeyi girin:"
 
 #: src/gui.cpp:37 src/gui.cpp:122
 msgid "Separate more than one string with a blank"
-msgstr "Adskil mere en en streng med mellemrum"
+msgstr "Aranacak birden çok şeyin aralarında boşluk bırak."
 
 #: src/gui.cpp:42 src/gui.cpp:127
 msgid "Buy it"
-msgstr "Køb det"
+msgstr "Satınal"
 
 #: src/gui.cpp:43 src/gui.cpp:128
 msgid "If the logbook-plugin is installed send a list\nwith checked items to 'Logbook/Maintenance/Buy Parts'"
@@ -59,15 +59,15 @@ msgstr ""
 
 #: src/gui.cpp:74 src/gui.cpp:159
 msgid "Buy"
-msgstr "Køb"
+msgstr "Satınal"
 
 #: src/gui.cpp:75 src/gui.cpp:160
 msgid "Priority"
-msgstr "Prioritet"
+msgstr "Öncelik"
 
 #: src/gui.cpp:76 src/gui.cpp:161
 msgid "Quota"
-msgstr "Kvote"
+msgstr "Teklif"
 
 #: src/gui.cpp:77 src/gui.cpp:162
 msgid "Actual"
@@ -75,15 +75,15 @@ msgstr ""
 
 #: src/gui.cpp:78 src/gui.cpp:163
 msgid "Balance"
-msgstr "Balance"
+msgstr "Tart"
 
 #: src/gui.cpp:79 src/gui.cpp:164 src/gui.cpp:267
 msgid "Unit"
-msgstr "Enhed"
+msgstr "Birim"
 
 #: src/gui.cpp:80 src/gui.cpp:165
 msgid "Text"
-msgstr "Tekst"
+msgstr "Metin"
 
 #: src/gui.cpp:81 src/gui.cpp:82 src/gui.cpp:83 src/gui.cpp:84 src/gui.cpp:85
 #: src/gui.cpp:86 src/gui.cpp:166 src/gui.cpp:167 src/gui.cpp:168
@@ -91,51 +91,51 @@ msgstr "Tekst"
 #: src/gui.cpp:219 src/gui.cpp:220 src/gui.cpp:221 src/gui.cpp:222
 #: src/gui.cpp:223
 msgid "Location"
-msgstr "Placering"
+msgstr "Yer"
 
 #: src/gui.cpp:104
 msgid "Material"
-msgstr "Materiale"
+msgstr "Malzeme"
 
 #: src/gui.cpp:188
 msgid "Provisions"
-msgstr "Forsyninger"
+msgstr "Önincelemeler"
 
 #: src/gui.cpp:240
 msgid "Locations"
-msgstr "Placeringer"
+msgstr "Yerler"
 
 #: src/gui.cpp:285
 msgid "Units"
-msgstr "Enheder"
+msgstr "Birimler"
 
 #: src/gui.cpp:381
 msgid "Show FindIt Icon"
-msgstr "Vis FindIt ikon"
+msgstr "AraBul Simgesini göster"
 
 #: src/gui.cpp:385 src/gui.cpp:391
 msgid "blank"
-msgstr "ryd"
+msgstr "boş"
 
 #: src/gui.cpp:387
 msgid "If Value of Column \"Balance\" = 0, set Value to"
-msgstr "Hvis værdi i kolonne \"Balance\" = 0. sæt værdi til"
+msgstr "Eğer değer sütunu \"Tart\"=0 ise, değeri 0 olarak belirle."
 
 #: src/gui.cpp:391
 msgid "\"No\""
-msgstr "\"Nej\""
+msgstr "\"Hayır\""
 
 #: src/gui.cpp:393
 msgid "If Value of Column \"Buy\" = No, set Value to"
-msgstr "Hvis værdi af kolonne \"Køb\" = Nej, sæt værdi til"
+msgstr "Eğer değer sütunu \"Satınal\" = Hayır ise, Değeri 0 olarak belirle."
 
 #: src/gui.cpp:397
 msgid "Yes"
-msgstr "Ja"
+msgstr "Evet"
 
 #: src/gui.cpp:397
 msgid "No"
-msgstr "Nej"
+msgstr "Hayır"
 
 #: src/gui.cpp:399
 msgid "Use last row values as default for new row"

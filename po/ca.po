@@ -5,53 +5,53 @@ msgstr ""
 "POT-Creation-Date: 2015-05-10 07:19-0500\n"
 "PO-Revision-Date: 2015-05-10 08:20-0400\n"
 "Last-Translator: nohal <pavel@kalian.cz>\n"
-"Language-Team: Danish\n"
-"Language: da_DK\n"
+"Language-Team: Catalan\n"
+"Language: ca_ES\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: crowdin.com\n"
 "X-Crowdin-Project: opencpn\n"
-"X-Crowdin-Language: da\n"
+"X-Crowdin-Language: ca\n"
 "X-Crowdin-File: /plugins/FindIt_pi/po/findit_pi.pot\n"
 
 #: src/findit_pi.cpp:96 src/findit_pi.cpp:156 src/findit_pi.cpp:207
 #: src/findit_pi.cpp:248 src/gui.h:185
 msgid "FindIt"
-msgstr "FindIt"
+msgstr "Findlt"
 
 #: src/findit_pi.cpp:161
 msgid "Stowage PlugIn for OpenCPN"
-msgstr "Lagrings-Plug-in til OpenCPN"
+msgstr "Estibar connector per a OpenCPN"
 
 #: src/findit_pi.cpp:166
 msgid "Stowage PlugIn for OpenCPN\n"
-msgstr "Lagrings-Plug-in til OpenCPN\n"
+msgstr "Estibar connector per a OpenCPN\n"
 
 #: src/gui.h:214
 msgid "FindIt Options"
-msgstr "FindIt indstillinger"
+msgstr "Opcions findlt"
 
 #: src/gui.cpp:27 src/gui.cpp:112 src/gui.cpp:196 src/gui.cpp:248
 msgid "Add Line"
-msgstr "Tilføj Linje"
+msgstr "Afegiu la línia"
 
 #: src/gui.cpp:28 src/gui.cpp:113
 msgid "Append a row\nDelete a row = Key <Del>"
-msgstr "Tilføj en række\nSlet en række = Tast <Del>"
+msgstr "Afegir una fila\nBorrar una fila = Tecla <Del>"
 
 #: src/gui.cpp:32 src/gui.cpp:117
 msgid "Enter Searchstring:"
-msgstr "Indtast søgestreng"
+msgstr "Introduïu el text a cercar:"
 
 #: src/gui.cpp:37 src/gui.cpp:122
 msgid "Separate more than one string with a blank"
-msgstr "Adskil mere en en streng med mellemrum"
+msgstr "Separar cada nom de cerca amb un espai"
 
 #: src/gui.cpp:42 src/gui.cpp:127
 msgid "Buy it"
-msgstr "Køb det"
+msgstr "Comprar-ho"
 
 #: src/gui.cpp:43 src/gui.cpp:128
 msgid "If the logbook-plugin is installed send a list\nwith checked items to 'Logbook/Maintenance/Buy Parts'"
@@ -59,15 +59,15 @@ msgstr ""
 
 #: src/gui.cpp:74 src/gui.cpp:159
 msgid "Buy"
-msgstr "Køb"
+msgstr "Comprar"
 
 #: src/gui.cpp:75 src/gui.cpp:160
 msgid "Priority"
-msgstr "Prioritet"
+msgstr "Prioritat"
 
 #: src/gui.cpp:76 src/gui.cpp:161
 msgid "Quota"
-msgstr "Kvote"
+msgstr "Quota"
 
 #: src/gui.cpp:77 src/gui.cpp:162
 msgid "Actual"
@@ -75,15 +75,15 @@ msgstr ""
 
 #: src/gui.cpp:78 src/gui.cpp:163
 msgid "Balance"
-msgstr "Balance"
+msgstr "Balanç"
 
 #: src/gui.cpp:79 src/gui.cpp:164 src/gui.cpp:267
 msgid "Unit"
-msgstr "Enhed"
+msgstr "Unitat"
 
 #: src/gui.cpp:80 src/gui.cpp:165
 msgid "Text"
-msgstr "Tekst"
+msgstr "Text"
 
 #: src/gui.cpp:81 src/gui.cpp:82 src/gui.cpp:83 src/gui.cpp:84 src/gui.cpp:85
 #: src/gui.cpp:86 src/gui.cpp:166 src/gui.cpp:167 src/gui.cpp:168
@@ -91,51 +91,51 @@ msgstr "Tekst"
 #: src/gui.cpp:219 src/gui.cpp:220 src/gui.cpp:221 src/gui.cpp:222
 #: src/gui.cpp:223
 msgid "Location"
-msgstr "Placering"
+msgstr "Localització"
 
 #: src/gui.cpp:104
 msgid "Material"
-msgstr "Materiale"
+msgstr "Material"
 
 #: src/gui.cpp:188
 msgid "Provisions"
-msgstr "Forsyninger"
+msgstr "Provisions"
 
 #: src/gui.cpp:240
 msgid "Locations"
-msgstr "Placeringer"
+msgstr "Localitzacions"
 
 #: src/gui.cpp:285
 msgid "Units"
-msgstr "Enheder"
+msgstr "Unitats"
 
 #: src/gui.cpp:381
 msgid "Show FindIt Icon"
-msgstr "Vis FindIt ikon"
+msgstr "Mostrar icona FindIt"
 
 #: src/gui.cpp:385 src/gui.cpp:391
 msgid "blank"
-msgstr "ryd"
+msgstr "en blanc"
 
 #: src/gui.cpp:387
 msgid "If Value of Column \"Balance\" = 0, set Value to"
-msgstr "Hvis værdi i kolonne \"Balance\" = 0. sæt værdi til"
+msgstr "Si el Valor de la Columna \"Balanç\" = 0, poseu el Valor a"
 
 #: src/gui.cpp:391
 msgid "\"No\""
-msgstr "\"Nej\""
+msgstr "\"No\""
 
 #: src/gui.cpp:393
 msgid "If Value of Column \"Buy\" = No, set Value to"
-msgstr "Hvis værdi af kolonne \"Køb\" = Nej, sæt værdi til"
+msgstr "Si el Valor de la Columna \"Comprar\" = No, poseu el Valor a"
 
 #: src/gui.cpp:397
 msgid "Yes"
-msgstr "Ja"
+msgstr "Si"
 
 #: src/gui.cpp:397
 msgid "No"
-msgstr "Nej"
+msgstr "No"
 
 #: src/gui.cpp:399
 msgid "Use last row values as default for new row"
