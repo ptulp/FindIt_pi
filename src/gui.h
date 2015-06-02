@@ -172,6 +172,14 @@ protected:
     {
         event.Skip();
     }
+    virtual void OnGridSelectCellMaterial( wxGridEvent& event )
+    {
+        event.Skip();
+    }
+    virtual void OnGridSelectCellFood( wxGridEvent& event )
+    {
+        event.Skip();
+    }
 
 
 public:
