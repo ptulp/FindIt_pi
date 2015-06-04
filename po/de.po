@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: opencpn\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-05-10 07:19-0500\n"
-"PO-Revision-Date: 2015-05-10 08:20-0400\n"
+"POT-Creation-Date: 2015-06-02 07:45-0500\n"
+"PO-Revision-Date: 2015-06-02 20:34-0400\n"
 "Last-Translator: nohal <pavel@kalian.cz>\n"
 "Language-Team: German\n"
 "Language: de_DE\n"
@@ -17,7 +17,7 @@ msgstr ""
 "X-Crowdin-File: /plugins/FindIt_pi/po/findit_pi.pot\n"
 
 #: src/findit_pi.cpp:96 src/findit_pi.cpp:156 src/findit_pi.cpp:207
-#: src/findit_pi.cpp:248 src/gui.h:185
+#: src/findit_pi.cpp:248 src/gui.h:193
 msgid "FindIt"
 msgstr ""
 
@@ -29,115 +29,122 @@ msgstr "Stauraum-Plugin für OpenCPN"
 msgid "Stowage PlugIn for OpenCPN\n"
 msgstr "Stauraum-Plugin für OpenCPN\n"
 
-#: src/gui.h:214
+#: src/gui.h:222
 msgid "FindIt Options"
 msgstr "FindIt Optionen"
 
-#: src/gui.cpp:27 src/gui.cpp:112 src/gui.cpp:196 src/gui.cpp:248
+#: src/gui.cpp:27 src/gui.cpp:115 src/gui.cpp:202 src/gui.cpp:254
 msgid "Add Line"
 msgstr "Zeile hinzufügen"
 
-#: src/gui.cpp:28 src/gui.cpp:113
-msgid "Append a row\nDelete a row = Key <Del>"
-msgstr "Zeile anfügen\nZeile löschen = Taste <Entf>"
+#: src/gui.cpp:28 src/gui.cpp:116
+msgid "Append a row\n"
+"Delete a row = Key <Del>"
+msgstr "Zeile anfügen\n"
+"Zeile löschen = Taste <Entf>"
 
-#: src/gui.cpp:32 src/gui.cpp:117
+#: src/gui.cpp:32 src/gui.cpp:120
 msgid "Enter Searchstring:"
 msgstr "Suchbegriff eingeben:"
 
-#: src/gui.cpp:37 src/gui.cpp:122
+#: src/gui.cpp:37 src/gui.cpp:125
 msgid "Separate more than one string with a blank"
 msgstr "mehrere Suchbegriffe durch Leertaste trennen"
 
-#: src/gui.cpp:42 src/gui.cpp:127
+#: src/gui.cpp:42 src/gui.cpp:130
 msgid "Buy it"
 msgstr "Kaufe es"
 
-#: src/gui.cpp:43 src/gui.cpp:128
-msgid "If the logbook-plugin is installed send a list\nwith checked items to 'Logbook/Maintenance/Buy Parts'"
+#: src/gui.cpp:43 src/gui.cpp:131
+msgid "If the logbook-plugin is installed send a list\n"
+"with checked items to 'Logbook/Maintenance/Buy Parts'"
 msgstr ""
 
-#: src/gui.cpp:74 src/gui.cpp:159
+#: src/gui.cpp:76 src/gui.cpp:164
 msgid "Buy"
 msgstr "Kaufe"
 
-#: src/gui.cpp:75 src/gui.cpp:160
+#: src/gui.cpp:77 src/gui.cpp:165
 msgid "Priority"
 msgstr "Priorität"
 
-#: src/gui.cpp:76 src/gui.cpp:161
+#: src/gui.cpp:78 src/gui.cpp:166
 msgid "Quota"
 msgstr "Soll"
 
-#: src/gui.cpp:77 src/gui.cpp:162
+#: src/gui.cpp:79 src/gui.cpp:167
 msgid "Actual"
 msgstr ""
 
-#: src/gui.cpp:78 src/gui.cpp:163
+#: src/gui.cpp:80 src/gui.cpp:168
 msgid "Balance"
 msgstr "Differenz"
 
-#: src/gui.cpp:79 src/gui.cpp:164 src/gui.cpp:267
+#: src/gui.cpp:81 src/gui.cpp:169 src/gui.cpp:273
 msgid "Unit"
 msgstr "Einheit"
 
-#: src/gui.cpp:80 src/gui.cpp:165
+#: src/gui.cpp:82 src/gui.cpp:170
 msgid "Text"
 msgstr ""
 
-#: src/gui.cpp:81 src/gui.cpp:82 src/gui.cpp:83 src/gui.cpp:84 src/gui.cpp:85
-#: src/gui.cpp:86 src/gui.cpp:166 src/gui.cpp:167 src/gui.cpp:168
-#: src/gui.cpp:169 src/gui.cpp:170 src/gui.cpp:171 src/gui.cpp:218
-#: src/gui.cpp:219 src/gui.cpp:220 src/gui.cpp:221 src/gui.cpp:222
-#: src/gui.cpp:223
+#: src/gui.cpp:83 src/gui.cpp:84 src/gui.cpp:85 src/gui.cpp:86 src/gui.cpp:87
+#: src/gui.cpp:88 src/gui.cpp:171 src/gui.cpp:172 src/gui.cpp:173
+#: src/gui.cpp:174 src/gui.cpp:175 src/gui.cpp:176 src/gui.cpp:224
+#: src/gui.cpp:225 src/gui.cpp:226 src/gui.cpp:227 src/gui.cpp:228
+#: src/gui.cpp:229
 msgid "Location"
 msgstr "Stauraum"
 
-#: src/gui.cpp:104
+#: src/gui.cpp:89 src/gui.cpp:177
+msgid "Remarks"
+msgstr ""
+
+#: src/gui.cpp:107
 msgid "Material"
 msgstr ""
 
-#: src/gui.cpp:188
+#: src/gui.cpp:194
 msgid "Provisions"
 msgstr "Proviant"
 
-#: src/gui.cpp:240
+#: src/gui.cpp:246
 msgid "Locations"
 msgstr "Stauräume"
 
-#: src/gui.cpp:285
+#: src/gui.cpp:291
 msgid "Units"
 msgstr "Einheiten"
 
-#: src/gui.cpp:381
+#: src/gui.cpp:391
 msgid "Show FindIt Icon"
 msgstr "Zeige FindIt Icon"
 
-#: src/gui.cpp:385 src/gui.cpp:391
+#: src/gui.cpp:395 src/gui.cpp:401
 msgid "blank"
 msgstr "Leer"
 
-#: src/gui.cpp:387
+#: src/gui.cpp:397
 msgid "If Value of Column \"Balance\" = 0, set Value to"
 msgstr "Wenn Spalte \"Differenz\" = 0, setze"
 
-#: src/gui.cpp:391
+#: src/gui.cpp:401
 msgid "\"No\""
 msgstr "\"Nein\""
 
-#: src/gui.cpp:393
+#: src/gui.cpp:403
 msgid "If Value of Column \"Buy\" = No, set Value to"
 msgstr "Wenn Spalte \"Kaufe\" = Nein, setze ein"
 
-#: src/gui.cpp:397
+#: src/gui.cpp:407
 msgid "Yes"
 msgstr "Ja"
 
-#: src/gui.cpp:397
+#: src/gui.cpp:407
 msgid "No"
 msgstr "Nein"
 
-#: src/gui.cpp:399
+#: src/gui.cpp:409
 msgid "Use last row values as default for new row"
 msgstr ""
 
