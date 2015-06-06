@@ -97,6 +97,8 @@ void MainDialog::OnInit( wxInitDialogEvent& event )
     prioritystr.Add(_T("4"));
     prioritystr.Add(_T("5"));
 
+    wxString s = wxFileName::GetPathSeparator();
+
     wxStandardPathsBase& std_path = wxStandardPathsBase::Get();
 #ifdef __WXMSW__
     wxString stdPath  = std_path.GetConfigDir();
@@ -105,14 +107,20 @@ void MainDialog::OnInit( wxInitDialogEvent& event )
     wxString stdPath  = std_path.GetUserDataDir();
 #endif
 #ifdef __WXOSX__
-    wxString stdPath  = std_path.GetUserConfigDir();   // should be ~/Library/Preferences
+    wxString stdPath  = std_path.GetUserConfigDir() + s + _T("opencpn");   // should be ~/Library/Preferences/opencpn
 #endif
 
+    pHome_Locn = stdPath + s + _T("plugins") + s + _T("FindIt") + s;
 
-    wxString pathSeparator = wxFileName::GetPathSeparator();
-    pHome_Locn = stdPath + pathSeparator;
-    pHome_Locn += _T("plugins") + pathSeparator;
-    pHome_Locn += _T("FindIt") + pathSeparator;
+#ifdef __WXOSX__
+    // Compatibility with pre-OCPN-4.2; move config dir to
+    // ~/Library/Preferences/opencpn if it exists
+    wxString oldPath = (std_path.GetUserConfigDir() + s + _T("plugins") + s + _T("FindIt"));
+    if (wxDirExists(oldPath) && !wxDirExists(pHome_Locn)) {
+	wxLogMessage("findit_pi: moving config dir %s to %s", oldPath, pHome_Locn);
+	wxRenameFile(oldPath, pHome_Locn);
+    }
+#endif
 
     if(!wxDir::Exists(pHome_Locn))
         wxMkdir(pHome_Locn);
