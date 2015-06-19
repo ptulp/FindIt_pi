@@ -1109,7 +1109,7 @@
 				</dict>
 				<dict>
 					<key>BEHAVIOR</key>
-					<integer>2</integer>
+					<integer>3</integer>
 					<key>DICTIONARY</key>
 					<dict>
 						<key>IC_REQUIREMENT_JAVASCRIPT_FUNCTION</key>
@@ -1131,7 +1131,7 @@
 							<key>SECONDARY_VALUE</key>
 							<string></string>
 							<key>VALUE</key>
-							<string>OpenCPN Version undetermined.  Assuming 4.1.602 or later.</string>
+							<string>OpenCPN Version to old. This Plugin is for OpenCPN version 4.1.602 or later.</string>
 						</dict>
 					</array>
 					<key>NAME</key>
