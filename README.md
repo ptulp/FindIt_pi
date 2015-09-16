@@ -36,14 +36,14 @@ You might choose to fork this repository on github so you might
 use your own git: URL instead of the one below.
 
 ```
-git clone https://github.com/delatbabel/FindIt_pi
+git clone https://github.com/ptulp/FindIt_pi
 ```
 
-or, from your own fork, a command similar to this (replace delatbabel with
+or, from your own fork, a command similar to this (replace ptulp with
 your own git user name):
 
 ```
-git clone git@github.com:delatbabel/FindIt_pi.git FindIt_pi
+git clone git@github.com:ptulp/FindIt_pi.git FindIt_pi
 ```
 
 ###Build on Linux
