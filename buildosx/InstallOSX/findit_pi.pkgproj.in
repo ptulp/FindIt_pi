@@ -1365,7 +1365,7 @@ if (chk_flag) {
 // is it the right version of OpenCPN?
   ocpn_data = system.files.bundleAtPath('/Applications/OpenCPN.app');
 ocpn_vers = ocpn_data.CFBundleShortVersionString;
-chk_flag = (ocpn_vers &gt;= '4.1.602'); }
+chk_flag = (ocpn_vers &gt;= '4.1'); }
 } catch (e) {
 // an exception just occurred
  return (false)
