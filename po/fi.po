@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: opencpn\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-06-02 07:45-0500\n"
-"PO-Revision-Date: 2015-06-02 20:34-0400\n"
+"PO-Revision-Date: 2016-02-26 09:18-0500\n"
 "Last-Translator: nohal <pavel@kalian.cz>\n"
 "Language-Team: Finnish\n"
 "Language: fi_FI\n"
@@ -75,7 +75,7 @@ msgstr "Kiintiö"
 
 #: src/gui.cpp:79 src/gui.cpp:167
 msgid "Actual"
-msgstr ""
+msgstr "Todellinen"
 
 #: src/gui.cpp:80 src/gui.cpp:168
 msgid "Balance"

@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: opencpn\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-06-02 07:45-0500\n"
-"PO-Revision-Date: 2015-06-02 20:34-0400\n"
+"PO-Revision-Date: 2016-02-25 08:05-0500\n"
 "Last-Translator: nohal <pavel@kalian.cz>\n"
 "Language-Team: Norwegian Bokmal\n"
 "Language: nb_NO\n"
@@ -58,7 +58,8 @@ msgstr "Kjøp det"
 #: src/gui.cpp:43 src/gui.cpp:131
 msgid "If the logbook-plugin is installed send a list\n"
 "with checked items to 'Logbook/Maintenance/Buy Parts'"
-msgstr ""
+msgstr "Hvis loggbok-utvidelsen er installert, send en liste\n"
+"med merkede enheter til 'Loggbok/Vedlikehold/Kjøp Deler'"
 
 #: src/gui.cpp:76 src/gui.cpp:164
 msgid "Buy"
@@ -74,7 +75,7 @@ msgstr "Kvote"
 
 #: src/gui.cpp:79 src/gui.cpp:167
 msgid "Actual"
-msgstr ""
+msgstr "Faktisk"
 
 #: src/gui.cpp:80 src/gui.cpp:168
 msgid "Balance"
@@ -98,7 +99,7 @@ msgstr "Plassering"
 
 #: src/gui.cpp:89 src/gui.cpp:177
 msgid "Remarks"
-msgstr ""
+msgstr "Merknader"
 
 #: src/gui.cpp:107
 msgid "Material"
@@ -146,5 +147,5 @@ msgstr "Nei"
 
 #: src/gui.cpp:409
 msgid "Use last row values as default for new row"
-msgstr ""
+msgstr "Bruk verdier fra siste rad som standard for ny rad"
 
