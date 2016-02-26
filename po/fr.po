@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: opencpn\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-06-02 07:45-0500\n"
-"PO-Revision-Date: 2015-06-04 16:22-0400\n"
+"PO-Revision-Date: 2016-02-25 08:03-0500\n"
 "Last-Translator: nohal <pavel@kalian.cz>\n"
 "Language-Team: French\n"
 "Language: fr_FR\n"
@@ -58,7 +58,8 @@ msgstr "Acheter ceci"
 #: src/gui.cpp:43 src/gui.cpp:131
 msgid "If the logbook-plugin is installed send a list\n"
 "with checked items to 'Logbook/Maintenance/Buy Parts'"
-msgstr ""
+msgstr "Si le complément \"Journal de bord\" est installé, transférer une liste\n"
+"avec les articles cochés dans 'Livre de bord / Maintenance / Pièces achetées''"
 
 #: src/gui.cpp:76 src/gui.cpp:164
 msgid "Buy"
@@ -75,7 +76,7 @@ msgstr "Stock\n"
 
 #: src/gui.cpp:79 src/gui.cpp:167
 msgid "Actual"
-msgstr ""
+msgstr "Effective"
 
 #: src/gui.cpp:80 src/gui.cpp:168
 msgid "Balance"
@@ -148,5 +149,5 @@ msgstr "Non"
 
 #: src/gui.cpp:409
 msgid "Use last row values as default for new row"
-msgstr ""
+msgstr "Dupliquer la ligne précédente"
 

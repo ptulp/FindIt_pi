@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: opencpn\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-06-02 07:45-0500\n"
-"PO-Revision-Date: 2015-06-02 20:34-0400\n"
+"PO-Revision-Date: 2016-02-26 09:18-0500\n"
 "Last-Translator: nohal <pavel@kalian.cz>\n"
 "Language-Team: Dutch\n"
 "Language: nl_NL\n"
@@ -35,7 +35,7 @@ msgstr "FindIt instellingen"
 
 #: src/gui.cpp:27 src/gui.cpp:115 src/gui.cpp:202 src/gui.cpp:254
 msgid "Add Line"
-msgstr "Toevoegen regel"
+msgstr "Regel toevoegen"
 
 #: src/gui.cpp:28 src/gui.cpp:116
 msgid "Append a row\n"
@@ -75,11 +75,11 @@ msgstr "Quota"
 
 #: src/gui.cpp:79 src/gui.cpp:167
 msgid "Actual"
-msgstr "Actuele"
+msgstr "Actueel"
 
 #: src/gui.cpp:80 src/gui.cpp:168
 msgid "Balance"
-msgstr "Balans"
+msgstr "Saldo"
 
 #: src/gui.cpp:81 src/gui.cpp:169 src/gui.cpp:273
 msgid "Unit"
@@ -119,7 +119,7 @@ msgstr "Eenheden"
 
 #: src/gui.cpp:391
 msgid "Show FindIt Icon"
-msgstr "FindIt pictogram weergeven"
+msgstr "Toon FindIt pictogram"
 
 #: src/gui.cpp:395 src/gui.cpp:401
 msgid "blank"

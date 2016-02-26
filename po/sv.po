@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: opencpn\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-06-02 07:45-0500\n"
-"PO-Revision-Date: 2015-06-02 20:34-0400\n"
+"PO-Revision-Date: 2016-02-18 16:09-0500\n"
 "Last-Translator: nohal <pavel@kalian.cz>\n"
 "Language-Team: Swedish\n"
 "Language: sv_SE\n"
@@ -58,7 +58,8 @@ msgstr "Köp"
 #: src/gui.cpp:43 src/gui.cpp:131
 msgid "If the logbook-plugin is installed send a list\n"
 "with checked items to 'Logbook/Maintenance/Buy Parts'"
-msgstr ""
+msgstr "Om loggbokmodulen är installerad så skicka en\n"
+"lista med markerade delar till 'Loggbook/Maintenance/Buy Parts'"
 
 #: src/gui.cpp:76 src/gui.cpp:164
 msgid "Buy"
@@ -74,7 +75,7 @@ msgstr "Behov"
 
 #: src/gui.cpp:79 src/gui.cpp:167
 msgid "Actual"
-msgstr ""
+msgstr "Faktiska"
 
 #: src/gui.cpp:80 src/gui.cpp:168
 msgid "Balance"
@@ -98,7 +99,7 @@ msgstr "Plats"
 
 #: src/gui.cpp:89 src/gui.cpp:177
 msgid "Remarks"
-msgstr ""
+msgstr "Anmärkningar"
 
 #: src/gui.cpp:107
 msgid "Material"
@@ -146,5 +147,5 @@ msgstr "Nej"
 
 #: src/gui.cpp:409
 msgid "Use last row values as default for new row"
-msgstr ""
+msgstr "Använd sista radens värden som standard för ny rad"
 
