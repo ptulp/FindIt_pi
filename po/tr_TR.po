@@ -3,14 +3,14 @@ msgstr ""
 "Project-Id-Version: opencpn\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-06-02 07:45-0500\n"
-"PO-Revision-Date: 2015-12-31 15:38-0500\n"
+"PO-Revision-Date: 2018-03-03 08:26-0500\n"
 "Last-Translator: nohal <pavel@kalian.cz>\n"
 "Language-Team: Turkish\n"
 "Language: tr_TR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: crowdin.com\n"
 "X-Crowdin-Project: opencpn\n"
 "X-Crowdin-Language: tr\n"
@@ -58,7 +58,9 @@ msgstr "Satınal"
 #: src/gui.cpp:43 src/gui.cpp:131
 msgid "If the logbook-plugin is installed send a list\n"
 "with checked items to 'Logbook/Maintenance/Buy Parts'"
-msgstr ""
+msgstr "Eğer Seyirdefteri eklentisi yüklü ise \n"
+"'Seyirdefteri/Bakım/Satınalınacak Parçalar'\n"
+" şeklinde bir liste gönder"
 
 #: src/gui.cpp:76 src/gui.cpp:164
 msgid "Buy"
@@ -74,7 +76,7 @@ msgstr "Teklif"
 
 #: src/gui.cpp:79 src/gui.cpp:167
 msgid "Actual"
-msgstr ""
+msgstr "Güncel"
 
 #: src/gui.cpp:80 src/gui.cpp:168
 msgid "Balance"
@@ -98,7 +100,7 @@ msgstr "Yer"
 
 #: src/gui.cpp:89 src/gui.cpp:177
 msgid "Remarks"
-msgstr ""
+msgstr "Uyarılar"
 
 #: src/gui.cpp:107
 msgid "Material"
@@ -146,5 +148,5 @@ msgstr "Hayır"
 
 #: src/gui.cpp:409
 msgid "Use last row values as default for new row"
-msgstr ""
+msgstr "Son satırı değerini varsayılan olarak yeni satır için kullan"
 

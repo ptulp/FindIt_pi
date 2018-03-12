@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: opencpn\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-06-02 07:45-0500\n"
-"PO-Revision-Date: 2016-02-24 14:27-0500\n"
+"PO-Revision-Date: 2018-03-11 10:38-0400\n"
 "Last-Translator: nohal <pavel@kalian.cz>\n"
 "Language-Team: Italian\n"
 "Language: it_IT\n"
@@ -35,12 +35,13 @@ msgstr ""
 
 #: src/gui.cpp:27 src/gui.cpp:115 src/gui.cpp:202 src/gui.cpp:254
 msgid "Add Line"
-msgstr ""
+msgstr "Aggiungere una linea"
 
 #: src/gui.cpp:28 src/gui.cpp:116
 msgid "Append a row\n"
 "Delete a row = Key <Del>"
-msgstr ""
+msgstr "Aggiungi una riga\n"
+"Elimina una riga = Chiave <Del>"
 
 #: src/gui.cpp:32 src/gui.cpp:120
 msgid "Enter Searchstring:"
@@ -48,24 +49,25 @@ msgstr ""
 
 #: src/gui.cpp:37 src/gui.cpp:125
 msgid "Separate more than one string with a blank"
-msgstr ""
+msgstr "Separare più di una stringa con uno spazio vuoto"
 
 #: src/gui.cpp:42 src/gui.cpp:130
 msgid "Buy it"
-msgstr ""
+msgstr "Compralo"
 
 #: src/gui.cpp:43 src/gui.cpp:131
 msgid "If the logbook-plugin is installed send a list\n"
 "with checked items to 'Logbook/Maintenance/Buy Parts'"
-msgstr ""
+msgstr "Se il plug-in del registro di log è installato, invia una lista\n"
+"con gli elementi selezionati a \"Registro Log/Mantenanza/Compra Parti\""
 
 #: src/gui.cpp:76 src/gui.cpp:164
 msgid "Buy"
-msgstr ""
+msgstr "Compra"
 
 #: src/gui.cpp:77 src/gui.cpp:165
 msgid "Priority"
-msgstr ""
+msgstr "Priorità"
 
 #: src/gui.cpp:78 src/gui.cpp:166
 msgid "Quota"
@@ -77,15 +79,15 @@ msgstr ""
 
 #: src/gui.cpp:80 src/gui.cpp:168
 msgid "Balance"
-msgstr ""
+msgstr "Bilancio"
 
 #: src/gui.cpp:81 src/gui.cpp:169 src/gui.cpp:273
 msgid "Unit"
-msgstr ""
+msgstr "Unità"
 
 #: src/gui.cpp:82 src/gui.cpp:170
 msgid "Text"
-msgstr ""
+msgstr "Testo"
 
 #: src/gui.cpp:83 src/gui.cpp:84 src/gui.cpp:85 src/gui.cpp:86 src/gui.cpp:87
 #: src/gui.cpp:88 src/gui.cpp:171 src/gui.cpp:172 src/gui.cpp:173
@@ -93,7 +95,7 @@ msgstr ""
 #: src/gui.cpp:225 src/gui.cpp:226 src/gui.cpp:227 src/gui.cpp:228
 #: src/gui.cpp:229
 msgid "Location"
-msgstr ""
+msgstr "Posizione"
 
 #: src/gui.cpp:89 src/gui.cpp:177
 msgid "Remarks"
@@ -101,7 +103,7 @@ msgstr ""
 
 #: src/gui.cpp:107
 msgid "Material"
-msgstr ""
+msgstr "Materiale"
 
 #: src/gui.cpp:194
 msgid "Provisions"
@@ -109,41 +111,41 @@ msgstr ""
 
 #: src/gui.cpp:246
 msgid "Locations"
-msgstr ""
+msgstr "Posizioni"
 
 #: src/gui.cpp:291
 msgid "Units"
-msgstr ""
+msgstr "Unità"
 
 #: src/gui.cpp:391
 msgid "Show FindIt Icon"
-msgstr ""
+msgstr "Mostra l'icona di FindIt"
 
 #: src/gui.cpp:395 src/gui.cpp:401
 msgid "blank"
-msgstr ""
+msgstr "vuoto"
 
 #: src/gui.cpp:397
 msgid "If Value of Column \"Balance\" = 0, set Value to"
-msgstr ""
+msgstr "Se il valore della Colonna \"Balance\" = 0, impostare valore a"
 
 #: src/gui.cpp:401
 msgid "\"No\""
-msgstr ""
+msgstr "\"No\""
 
 #: src/gui.cpp:403
 msgid "If Value of Column \"Buy\" = No, set Value to"
-msgstr ""
+msgstr "Se il valore della colonna \"Acquista\" = No, impostare il valore di"
 
 #: src/gui.cpp:407
 msgid "Yes"
-msgstr ""
+msgstr "Si"
 
 #: src/gui.cpp:407
 msgid "No"
-msgstr ""
+msgstr "No"
 
 #: src/gui.cpp:409
 msgid "Use last row values as default for new row"
-msgstr ""
+msgstr "Utilizza i valori dell'ultima riga come predefiniti per la nuova riga"
 
