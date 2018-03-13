@@ -1,0 +1,151 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: opencpn\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-06-02 07:45-0500\n"
+"PO-Revision-Date: 2018-03-11 10:38-0400\n"
+"Last-Translator: nohal <pavel@kalian.cz>\n"
+"Language-Team: Indonesian\n"
+"Language: id_ID\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: crowdin.com\n"
+"X-Crowdin-Project: opencpn\n"
+"X-Crowdin-Language: id\n"
+"X-Crowdin-File: /plugins/FindIt_pi/po/findit_pi.pot\n"
+
+#: src/findit_pi.cpp:96 src/findit_pi.cpp:156 src/findit_pi.cpp:207
+#: src/findit_pi.cpp:248 src/gui.h:193
+msgid "FindIt"
+msgstr "Temukan"
+
+#: src/findit_pi.cpp:161
+msgid "Stowage PlugIn for OpenCPN"
+msgstr "Plug Plug untuk OpenCPN"
+
+#: src/findit_pi.cpp:166
+msgid "Stowage PlugIn for OpenCPN\n"
+msgstr "Plugin Tempat Penyimpanan untuk OpenCPN\n"
+
+#: src/gui.h:222
+msgid "FindIt Options"
+msgstr "Pilihan FindIt"
+
+#: src/gui.cpp:27 src/gui.cpp:115 src/gui.cpp:202 src/gui.cpp:254
+msgid "Add Line"
+msgstr "Tambahkan baris"
+
+#: src/gui.cpp:28 src/gui.cpp:116
+msgid "Append a row\n"
+"Delete a row = Key <Del>"
+msgstr "Tambahkan baris\n"
+" Hapus baris = Kunci <Del>"
+
+#: src/gui.cpp:32 src/gui.cpp:120
+msgid "Enter Searchstring:"
+msgstr "Masukkan Searchstring:"
+
+#: src/gui.cpp:37 src/gui.cpp:125
+msgid "Separate more than one string with a blank"
+msgstr "Pisahkan lebih dari satu string dengan huruf kosong"
+
+#: src/gui.cpp:42 src/gui.cpp:130
+msgid "Buy it"
+msgstr "Membelinya"
+
+#: src/gui.cpp:43 src/gui.cpp:131
+msgid "If the logbook-plugin is installed send a list\n"
+"with checked items to 'Logbook/Maintenance/Buy Parts'"
+msgstr "Jika buku catatan-plugin diinstal mengirim daftar\n"
+"dengan item diperiksa untuk 'buku Jurnal/Pemeliharaan/Beli Parts'"
+
+#: src/gui.cpp:76 src/gui.cpp:164
+msgid "Buy"
+msgstr "Beli"
+
+#: src/gui.cpp:77 src/gui.cpp:165
+msgid "Priority"
+msgstr "Diutamakan"
+
+#: src/gui.cpp:78 src/gui.cpp:166
+msgid "Quota"
+msgstr "Kouta"
+
+#: src/gui.cpp:79 src/gui.cpp:167
+msgid "Actual"
+msgstr "Sebenarnya"
+
+#: src/gui.cpp:80 src/gui.cpp:168
+msgid "Balance"
+msgstr "Seimbang"
+
+#: src/gui.cpp:81 src/gui.cpp:169 src/gui.cpp:273
+msgid "Unit"
+msgstr "Satuan"
+
+#: src/gui.cpp:82 src/gui.cpp:170
+msgid "Text"
+msgstr "Teks"
+
+#: src/gui.cpp:83 src/gui.cpp:84 src/gui.cpp:85 src/gui.cpp:86 src/gui.cpp:87
+#: src/gui.cpp:88 src/gui.cpp:171 src/gui.cpp:172 src/gui.cpp:173
+#: src/gui.cpp:174 src/gui.cpp:175 src/gui.cpp:176 src/gui.cpp:224
+#: src/gui.cpp:225 src/gui.cpp:226 src/gui.cpp:227 src/gui.cpp:228
+#: src/gui.cpp:229
+msgid "Location"
+msgstr "Lokasi"
+
+#: src/gui.cpp:89 src/gui.cpp:177
+msgid "Remarks"
+msgstr "Keterangan"
+
+#: src/gui.cpp:107
+msgid "Material"
+msgstr "Bahan"
+
+#: src/gui.cpp:194
+msgid "Provisions"
+msgstr "Ketentuan"
+
+#: src/gui.cpp:246
+msgid "Locations"
+msgstr "Lokasi"
+
+#: src/gui.cpp:291
+msgid "Units"
+msgstr "Unit"
+
+#: src/gui.cpp:391
+msgid "Show FindIt Icon"
+msgstr "Menunjukkan Ikon FindIt"
+
+#: src/gui.cpp:395 src/gui.cpp:401
+msgid "blank"
+msgstr "kosong"
+
+#: src/gui.cpp:397
+msgid "If Value of Column \"Balance\" = 0, set Value to"
+msgstr "Jika Nilai Kolom \"Saldo\" = 0, Nilai yang ditetapkan untuk"
+
+#: src/gui.cpp:401
+msgid "\"No\""
+msgstr "\"Tidak\""
+
+#: src/gui.cpp:403
+msgid "If Value of Column \"Buy\" = No, set Value to"
+msgstr "Jika Nilai Kolom \"Beli\" = No, set Nilai untuk"
+
+#: src/gui.cpp:407
+msgid "Yes"
+msgstr "Ya"
+
+#: src/gui.cpp:407
+msgid "No"
+msgstr "Tidak"
+
+#: src/gui.cpp:409
+msgid "Use last row values as default for new row"
+msgstr "Pakai nilai baris terakhir sebagai bawaan untuk baris baru"
+

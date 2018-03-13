@@ -3,89 +3,91 @@ msgstr ""
 "Project-Id-Version: opencpn\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-06-02 07:45-0500\n"
-"PO-Revision-Date: 2016-01-25 19:58-0500\n"
+"PO-Revision-Date: 2018-03-04 05:54-0500\n"
 "Last-Translator: nohal <pavel@kalian.cz>\n"
-"Language-Team: Russian\n"
-"Language: ru_RU\n"
+"Language-Team: Polish\n"
+"Language: pl_PL\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"Plural-Forms: nplurals=4; plural=((n == 1) ? 0 : ((n%10 >= 2 && n%10 <=4 && (n%100 < 12 || n%100 > 14)) ? 1 : ((n%10 == 0 || n%10 == 1 || (n%10 >= 5 && n%10 <=9)) || (n%100 >= 12 && n%100 <= 14)) ? 2 : 3));\n"
 "X-Generator: crowdin.com\n"
 "X-Crowdin-Project: opencpn\n"
-"X-Crowdin-Language: ru\n"
+"X-Crowdin-Language: pl\n"
 "X-Crowdin-File: /plugins/FindIt_pi/po/findit_pi.pot\n"
 
 #: src/findit_pi.cpp:96 src/findit_pi.cpp:156 src/findit_pi.cpp:207
 #: src/findit_pi.cpp:248 src/gui.h:193
 msgid "FindIt"
-msgstr ""
+msgstr "FindIt"
 
 #: src/findit_pi.cpp:161
 msgid "Stowage PlugIn for OpenCPN"
-msgstr ""
+msgstr "Zapasy wtyczka dla OpenCPN"
 
 #: src/findit_pi.cpp:166
 msgid "Stowage PlugIn for OpenCPN\n"
-msgstr ""
+msgstr "Zapasy wtyczka dla OpenCPN\n"
 
 #: src/gui.h:222
 msgid "FindIt Options"
-msgstr ""
+msgstr "Opcje FindIt"
 
 #: src/gui.cpp:27 src/gui.cpp:115 src/gui.cpp:202 src/gui.cpp:254
 msgid "Add Line"
-msgstr ""
+msgstr "Dodaj wiersz"
 
 #: src/gui.cpp:28 src/gui.cpp:116
 msgid "Append a row\n"
 "Delete a row = Key <Del>"
-msgstr ""
+msgstr "Dołącz row\n"
+"Usuń wiersz = klucz <Del>"
 
 #: src/gui.cpp:32 src/gui.cpp:120
 msgid "Enter Searchstring:"
-msgstr ""
+msgstr "Wprowadź szukane wyrażenie:"
 
 #: src/gui.cpp:37 src/gui.cpp:125
 msgid "Separate more than one string with a blank"
-msgstr ""
+msgstr "Oddziel więcej niż jedno wyrażenie spacją"
 
 #: src/gui.cpp:42 src/gui.cpp:130
 msgid "Buy it"
-msgstr ""
+msgstr "Kup to"
 
 #: src/gui.cpp:43 src/gui.cpp:131
 msgid "If the logbook-plugin is installed send a list\n"
 "with checked items to 'Logbook/Maintenance/Buy Parts'"
-msgstr ""
+msgstr "Jeśli zainstalowano wtyczkę Dziennik/logbook Wyślij listę\n"
+"z zaznaczonymi elementami do 'Dziennik/konserwacja/Kup części'"
 
 #: src/gui.cpp:76 src/gui.cpp:164
 msgid "Buy"
-msgstr ""
+msgstr "Kup"
 
 #: src/gui.cpp:77 src/gui.cpp:165
 msgid "Priority"
-msgstr ""
+msgstr "Ważność"
 
 #: src/gui.cpp:78 src/gui.cpp:166
 msgid "Quota"
-msgstr ""
+msgstr "Przydział"
 
 #: src/gui.cpp:79 src/gui.cpp:167
 msgid "Actual"
-msgstr ""
+msgstr "Aktualnie"
 
 #: src/gui.cpp:80 src/gui.cpp:168
 msgid "Balance"
-msgstr ""
+msgstr "Bilans"
 
 #: src/gui.cpp:81 src/gui.cpp:169 src/gui.cpp:273
 msgid "Unit"
-msgstr ""
+msgstr "Jednostka"
 
 #: src/gui.cpp:82 src/gui.cpp:170
 msgid "Text"
-msgstr ""
+msgstr "Tekst"
 
 #: src/gui.cpp:83 src/gui.cpp:84 src/gui.cpp:85 src/gui.cpp:86 src/gui.cpp:87
 #: src/gui.cpp:88 src/gui.cpp:171 src/gui.cpp:172 src/gui.cpp:173
@@ -93,57 +95,57 @@ msgstr ""
 #: src/gui.cpp:225 src/gui.cpp:226 src/gui.cpp:227 src/gui.cpp:228
 #: src/gui.cpp:229
 msgid "Location"
-msgstr ""
+msgstr "Lokalizacja"
 
 #: src/gui.cpp:89 src/gui.cpp:177
 msgid "Remarks"
-msgstr ""
+msgstr "Uwagi"
 
 #: src/gui.cpp:107
 msgid "Material"
-msgstr ""
+msgstr "Materiał"
 
 #: src/gui.cpp:194
 msgid "Provisions"
-msgstr ""
+msgstr "Przepisy"
 
 #: src/gui.cpp:246
 msgid "Locations"
-msgstr ""
+msgstr "Lokalizacje"
 
 #: src/gui.cpp:291
 msgid "Units"
-msgstr ""
+msgstr "Jednostki"
 
 #: src/gui.cpp:391
 msgid "Show FindIt Icon"
-msgstr ""
+msgstr "Pokaż ikonę FindIt"
 
 #: src/gui.cpp:395 src/gui.cpp:401
 msgid "blank"
-msgstr ""
+msgstr "puste"
 
 #: src/gui.cpp:397
 msgid "If Value of Column \"Balance\" = 0, set Value to"
-msgstr ""
+msgstr "Jeśli wartość w kolumnie \"Saldo\" = 0, ustaw wartość na"
 
 #: src/gui.cpp:401
 msgid "\"No\""
-msgstr ""
+msgstr "\"Nie\""
 
 #: src/gui.cpp:403
 msgid "If Value of Column \"Buy\" = No, set Value to"
-msgstr ""
+msgstr "Jeśli wartość z kolumny \"kupić\" = Nie, ustaw wartość na"
 
 #: src/gui.cpp:407
 msgid "Yes"
-msgstr ""
+msgstr "Tak"
 
 #: src/gui.cpp:407
 msgid "No"
-msgstr ""
+msgstr "Nie"
 
 #: src/gui.cpp:409
 msgid "Use last row values as default for new row"
-msgstr ""
+msgstr "Użyj ostatnich wartości wiersza jako domyślne dla nowego wiersza"
 

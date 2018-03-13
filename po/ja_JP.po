@@ -3,17 +3,17 @@ msgstr ""
 "Project-Id-Version: opencpn\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-06-02 07:45-0500\n"
-"PO-Revision-Date: 2016-02-25 08:05-0500\n"
+"PO-Revision-Date: 2018-03-11 10:38-0400\n"
 "Last-Translator: nohal <pavel@kalian.cz>\n"
-"Language-Team: Portuguese, Brazilian\n"
-"Language: pt_BR\n"
+"Language-Team: Japanese\n"
+"Language: ja_JP\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: crowdin.com\n"
 "X-Crowdin-Project: opencpn\n"
-"X-Crowdin-Language: pt-BR\n"
+"X-Crowdin-Language: ja\n"
 "X-Crowdin-File: /plugins/FindIt_pi/po/findit_pi.pot\n"
 
 #: src/findit_pi.cpp:96 src/findit_pi.cpp:156 src/findit_pi.cpp:207
@@ -23,71 +23,71 @@ msgstr "FindIt"
 
 #: src/findit_pi.cpp:161
 msgid "Stowage PlugIn for OpenCPN"
-msgstr "Estiva PlugIn para OpenCPN"
+msgstr "OpenCPN のストレージプラグイン"
 
 #: src/findit_pi.cpp:166
 msgid "Stowage PlugIn for OpenCPN\n"
-msgstr "Estiva PlugIn para OpenCPN\n"
+msgstr "OpenCPN のストレージプラグイン\n"
 
 #: src/gui.h:222
 msgid "FindIt Options"
-msgstr "Opções FindIt"
+msgstr "FindIt オプション"
 
 #: src/gui.cpp:27 src/gui.cpp:115 src/gui.cpp:202 src/gui.cpp:254
 msgid "Add Line"
-msgstr "Adicionar linha"
+msgstr "行を追加"
 
 #: src/gui.cpp:28 src/gui.cpp:116
 msgid "Append a row\n"
 "Delete a row = Key <Del>"
-msgstr "Acrescentar uma linha\n"
-"Excluir uma linha = chave <Del>"
+msgstr "行を追加\n"
+"行を削除 = Key <Del>"
 
 #: src/gui.cpp:32 src/gui.cpp:120
 msgid "Enter Searchstring:"
-msgstr "Digite Caracteres para Procura:"
+msgstr "検索文字列を入力:"
 
 #: src/gui.cpp:37 src/gui.cpp:125
 msgid "Separate more than one string with a blank"
-msgstr "Separe mais de um caracter com um espaço em branco"
+msgstr "空白で複数の文字列を区切ります"
 
 #: src/gui.cpp:42 src/gui.cpp:130
 msgid "Buy it"
-msgstr "Comprá-lo"
+msgstr "それを購入する"
 
 #: src/gui.cpp:43 src/gui.cpp:131
 msgid "If the logbook-plugin is installed send a list\n"
 "with checked items to 'Logbook/Maintenance/Buy Parts'"
-msgstr "Se o plugin diário de bordo está instalado enviar uma lista\n"
-"com itens verificados  para 'Diário de bordo/Manutenção/comprar peças'"
+msgstr "ログブック - プラグインがインストールされている場合は、リストを送信します。\n"
+"「ログブック/メンテナンス/購入部品」にチェックされた項目です。"
 
 #: src/gui.cpp:76 src/gui.cpp:164
 msgid "Buy"
-msgstr "Comprar"
+msgstr "購入"
 
 #: src/gui.cpp:77 src/gui.cpp:165
 msgid "Priority"
-msgstr "Prioridade"
+msgstr "優先順位"
 
 #: src/gui.cpp:78 src/gui.cpp:166
 msgid "Quota"
-msgstr "Cota"
+msgstr "割当"
 
 #: src/gui.cpp:79 src/gui.cpp:167
 msgid "Actual"
-msgstr "Real"
+msgstr "実際"
 
 #: src/gui.cpp:80 src/gui.cpp:168
 msgid "Balance"
-msgstr "Balanço"
+msgstr "残高"
 
 #: src/gui.cpp:81 src/gui.cpp:169 src/gui.cpp:273
 msgid "Unit"
-msgstr "Unit"
+msgstr "単位"
 
 #: src/gui.cpp:82 src/gui.cpp:170
 msgid "Text"
-msgstr "Texto"
+msgstr "テキスト"
 
 #: src/gui.cpp:83 src/gui.cpp:84 src/gui.cpp:85 src/gui.cpp:86 src/gui.cpp:87
 #: src/gui.cpp:88 src/gui.cpp:171 src/gui.cpp:172 src/gui.cpp:173
@@ -95,57 +95,57 @@ msgstr "Texto"
 #: src/gui.cpp:225 src/gui.cpp:226 src/gui.cpp:227 src/gui.cpp:228
 #: src/gui.cpp:229
 msgid "Location"
-msgstr "Localização"
+msgstr "ロケーション"
 
 #: src/gui.cpp:89 src/gui.cpp:177
 msgid "Remarks"
-msgstr "Observações"
+msgstr "備考"
 
 #: src/gui.cpp:107
 msgid "Material"
-msgstr "Material"
+msgstr "材料"
 
 #: src/gui.cpp:194
 msgid "Provisions"
-msgstr "Provisões"
+msgstr "規定"
 
 #: src/gui.cpp:246
 msgid "Locations"
-msgstr "Localizações"
+msgstr "ロケーション"
 
 #: src/gui.cpp:291
 msgid "Units"
-msgstr "Units"
+msgstr "単位"
 
 #: src/gui.cpp:391
 msgid "Show FindIt Icon"
-msgstr "Mostrar ícone FindIt"
+msgstr "FindIt アイコンを表示します。"
 
 #: src/gui.cpp:395 src/gui.cpp:401
 msgid "blank"
-msgstr "em branco"
+msgstr "空白"
 
 #: src/gui.cpp:397
 msgid "If Value of Column \"Balance\" = 0, set Value to"
-msgstr "Se o valor da coluna \"saldo\" = 0, defina o valor para"
+msgstr "列の値が「残高」の場合 0 を設定します。"
 
 #: src/gui.cpp:401
 msgid "\"No\""
-msgstr "\"Não\""
+msgstr "\"No\""
 
 #: src/gui.cpp:403
 msgid "If Value of Column \"Buy\" = No, set Value to"
-msgstr "Se o valor da coluna \"comprar\" = não, defina o valor para"
+msgstr "列の値が「購入」の場合 は、Noに設定します。"
 
 #: src/gui.cpp:407
 msgid "Yes"
-msgstr "Sim"
+msgstr "はい"
 
 #: src/gui.cpp:407
 msgid "No"
-msgstr "Não"
+msgstr "いいえ"
 
 #: src/gui.cpp:409
 msgid "Use last row values as default for new row"
-msgstr "Usar valores da última linha como padrão para nova linha"
+msgstr "最後の行の値を新しい行の既定値として使用します。"
 
