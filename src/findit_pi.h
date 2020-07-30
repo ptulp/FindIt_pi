@@ -36,9 +36,6 @@
 
 #include "version.h"
 
-#define     MY_API_VERSION_MAJOR    1
-#define     MY_API_VERSION_MINOR    9  // for OpenCPN 3.x
-
 #include "ocpn_plugin.h"
 #include "findit.h"
 
@@ -49,7 +46,7 @@ class findit_pi;
 //----------------------------------------------------------------------------------------------------------
 
 
-class findit_pi : public opencpn_plugin_19
+class findit_pi : public opencpn_plugin_116
 {
 public:
     findit_pi(void *ppimgr);//:opencpn_plugin(ppimgr){}

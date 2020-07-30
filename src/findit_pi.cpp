@@ -54,7 +54,7 @@ extern "C" DECL_EXP void destroy_pi(opencpn_plugin* p)
 
 
 findit_pi::findit_pi(void *ppimgr)
-    :opencpn_plugin_19(ppimgr)
+    :opencpn_plugin_116(ppimgr)
 {
     // Create the PlugIn icons
     initialize_images();
@@ -133,12 +133,12 @@ void findit_pi::SetPluginMessage(wxString &message_id, wxString &message_body)
 
 int findit_pi::GetAPIVersionMajor()
 {
-    return MY_API_VERSION_MAJOR;
+    return OCPN_API_VERSION_MAJOR;
 }
 
 int findit_pi::GetAPIVersionMinor()
 {
-    return MY_API_VERSION_MINOR;
+    return OCPN_API_VERSION_MINOR;
 }
 
 int findit_pi::GetPlugInVersionMajor()
@@ -153,17 +153,19 @@ int findit_pi::GetPlugInVersionMinor()
 
 wxString findit_pi::GetCommonName()
 {
-    return _("FindIt");
+   return _T(PLUGIN_COMMON_NAME);
+   
 }
 
 wxString findit_pi::GetShortDescription()
 {
-    return _("Stowage PlugIn for OpenCPN");
+     return _(PLUGIN_SHORT_DESCRIPTION);
+	 
 }
 
 wxString findit_pi::GetLongDescription()
 {
-    return _("Stowage PlugIn for OpenCPN\n");
+    return _(PLUGIN_LONG_DESCRIPTION);
 
 }
 
