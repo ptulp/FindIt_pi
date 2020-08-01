@@ -665,7 +665,7 @@ bool MainDialog::deleteGridRow(int key, wxGrid* grid)
         col = lastColSelectedLocations;
     }
 
-    if( grid->GetNumberRows() > 0 && lastRow > 0)
+    if( grid->GetNumberRows() > 0 && *lastRow > 0)
     {
         grid->DeleteRows(*lastRow);
 
