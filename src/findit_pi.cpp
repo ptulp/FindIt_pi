@@ -53,11 +53,21 @@ extern "C" DECL_EXP void destroy_pi(opencpn_plugin* p)
 }
 
 
+// findit_pi::findit_pi(void *ppimgr)
+//    :opencpn_plugin_116(ppimgr)
+//{
+//    // Create the PlugIn icons
+//    initialize_images();
+//}
+
+
 findit_pi::findit_pi(void *ppimgr)
-    :opencpn_plugin_116(ppimgr)
+      :opencpn_plugin_116(ppimgr)
 {
-    // Create the PlugIn icons
-    initialize_images();
+      m_pFinditDialog = nullptr;
+      // Create the PlugIn icons
+      initialize_images();
+      s_findit_pi = this;
 }
 
 findit_pi::~findit_pi()
@@ -81,6 +91,20 @@ int findit_pi::Init(void)
     // Get a pointer to the opencpn display canvas, to use as a parent for windows created
     m_parent_window = GetOCPNCanvasWindow();
 
+
+    //    This PlugIn needs a toolbar icon, so request its insertion if enabled locally
+#ifdef PLUGIN_USE_SVG
+      m_leftclick_tool_id = InsertPlugInToolSVG( "Findit" , _svg_findit, _svg_findit_toggled,
+                                              wxITEM_CHECK, _("Findit"),  "" , NULL, FINDIT_TOOL_POSITION, 0, this);
+#else
+      m_leftclick_tool_id  = InsertPlugInTool("", _img_findit, _img_findit, wxITEM_NORMAL,
+                                              _("Findit"), "", NULL,
+                                              FINDIT_TOOL_POSITION, 0, this);
+#endif
+      SendFindit(true);
+
+
+
     m_pconfig = GetOCPNConfigObject();
     LoadConfig();
 
@@ -88,12 +112,12 @@ int findit_pi::Init(void)
 
     //    In order to avoid an ASSERT on msw debug builds,
     //    we need to create a dummy menu to act as a surrogate parent of the created MenuItems
-    //    The Items will be re-parented when added to the real context meenu
-    wxMenu dummy_menu;
-    m_bFINDITShowIcon = true;
-    if(m_bFINDITShowIcon)
-        m_leftclick_tool_id  = InsertPlugInTool(_T(""), _img_findit, _img_findit, wxITEM_NORMAL,
-                                                _("FindIt"), _T(""), NULL, FINDIT_TOOL_POSITION, 0, this);
+    //    The Items will be re-parented when added to the real context menu
+//    wxMenu dummy_menu;
+//    m_bFINDITShowIcon = true;
+//    if(m_bFINDITShowIcon)
+//        m_leftclick_tool_id  = InsertPlugInTool(_T(""), _img_findit, _img_findit, wxITEM_NORMAL,
+//                                                _("FindIt"), _T(""), NULL, FINDIT_TOOL_POSITION, 0, this);
 
     return (
                WANTS_TOOLBAR_CALLBACK    |

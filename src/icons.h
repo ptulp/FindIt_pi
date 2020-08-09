@@ -16,8 +16,7 @@ extern wxBitmap *_img_findit;
 
 #ifdef PLUGIN_USE_SVG
 extern wxString _svg_findit;
-extern wxString _svg_findit_rollover;
-extern wxString _findit_toggled;
+extern wxString _svg_findit_toggled;
 #endif
 
 #endif /* ICONS_H */
