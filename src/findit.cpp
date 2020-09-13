@@ -218,12 +218,12 @@ void MainDialog::OnGridSelectCellMaterial( wxGridEvent& event )
 	selGridRow = event.GetRow();
 //	previousColumn = event.GetCol();
 
-	if(selGridCol == MainDialog::REMARKS && m_gridMaterial->GetRowHeight(selGridRow) < 120)
+	if(selGridCol == MainDialog::REMARKS && m_gridMaterial->GetRowSize(selGridRow) < 120)
 	{
-		m_gridMaterial->SetRowHeight(selGridRow,120);
+		m_gridMaterial->SetRowSize(selGridRow,120);
 		m_gridMaterial->SetCellEditor(selGridRow,selGridCol,new wxGridCellAutoWrapStringEditor);
 	}
-	else if(m_gridMaterial->GetRowHeight(selGridRow) == 120 && selGridCol != MainDialog::REMARKS)
+	else if(m_gridMaterial->GetRowSize(selGridRow) == 120 && selGridCol != MainDialog::REMARKS)
 		setEqualRowHeight(m_gridMaterial, selGridRow);
 
 	m_gridMaterial->SetCellAlignment( selGridRow, selGridCol, wxALIGN_LEFT, wxALIGN_TOP );
@@ -244,12 +244,12 @@ void MainDialog::OnGridSelectCellFood( wxGridEvent& event )
 	selGridRow = event.GetRow();
 //	previousColumn = event.GetCol();
 
-	if(selGridCol == MainDialog::REMARKS && m_gridFood->GetRowHeight(selGridRow) < 120)
+	if(selGridCol == MainDialog::REMARKS && m_gridFood->GetRowSize(selGridRow) < 120)
 	{
-		m_gridFood->SetRowHeight(selGridRow,120);
+		m_gridFood->SetRowSize(selGridRow,120);
 		m_gridFood->SetCellEditor(selGridRow,selGridCol,new wxGridCellAutoWrapStringEditor);
 	}
-	else if(m_gridFood->GetRowHeight(selGridRow) == 120 && selGridCol != MainDialog::REMARKS)
+	else if(m_gridFood->GetRowSize(selGridRow) == 120 && selGridCol != MainDialog::REMARKS)
 		setEqualRowHeight(m_gridFood, selGridRow);
 
 	m_gridFood->SetCellAlignment( selGridRow, selGridCol, wxALIGN_LEFT, wxALIGN_TOP );
@@ -268,12 +268,12 @@ void MainDialog::setEqualRowHeight(wxGrid* grid, int row)
 	if(count <= 0) return;
 
 	grid->AutoSizeRow(row,false);	
-	height = grid->GetRowHeight(row);
+	height = grid->GetRowSize(row);
 
 	if( height > max)
 		max = height;
 
-	grid->SetRowHeight(row,max);
+	grid->SetRowSize(row,max);
 }
 
 void MainDialog::sortGrid(wxGrid* grid, int col, bool ascending)
@@ -665,7 +665,7 @@ bool MainDialog::deleteGridRow(int key, wxGrid* grid)
         col = lastColSelectedLocations;
     }
 
-    if( grid->GetNumberRows() > 0 && lastRow > 0)
+    if( grid->GetNumberRows() > 0 && *lastRow > 0)
     {
         grid->DeleteRows(*lastRow);
 

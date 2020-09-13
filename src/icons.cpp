@@ -9,6 +9,13 @@
 wxBitmap *_img_findit_pi;
 wxBitmap *_img_findit;
 
+#ifdef PLUGIN_USE_SVG
+#include "ocpn_plugin.h"
+wxString _svg_findit;
+wxString _svg_findit_rollover;
+wxString _svg_findit_toggled;
+#endif
+
 void initialize_images(void)
 {
 static const unsigned char img_findit_png[] = {
@@ -292,5 +299,19 @@ static const unsigned char img_findit_pi_png[] = {
 		wxMemoryInputStream sm(img_findit_png,sizeof(img_findit_png));
 		_img_findit = new wxBitmap(wxImage(sm));
 	}
+
+//From weather_routing
+#ifdef PLUGIN_USE_SVG
+    wxFileName fn;
+    fn.SetPath(GetPluginDataDir("findit_pi"));
+    fn.AppendDir(_T("icons"));
+    fn.SetFullName(_T("findit_pi.svg"));
+    _svg_findit = fn.GetFullPath();
+    wxLogMessage(_T("Loading toolbar icon: ") + _svg_findit);
+    fn.SetFullName(_T("findit_pi_rollover.svg"));
+    _svg_findit_rollover = fn.GetFullPath();	
+    fn.SetFullName(_T("findit_pi_toggled.svg"));
+    _svg_findit_toggled = fn.GetFullPath();
+#endif
 	return;
 }

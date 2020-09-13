@@ -29,6 +29,7 @@
 
 #ifndef  WX_PRECOMP
 #include <wx/wx.h>
+#include <wx/glcanvas.h>
 #endif //precompiled headers
 
 #include <wx/aui/aui.h>
@@ -54,10 +55,12 @@ extern "C" DECL_EXP void destroy_pi(opencpn_plugin* p)
 
 
 findit_pi::findit_pi(void *ppimgr)
-    :opencpn_plugin_19(ppimgr)
+   :opencpn_plugin_116(ppimgr)
 {
-    // Create the PlugIn icons
+//      m_pFinditDialog = nullptr;  //climatology has this
+  // Create the PlugIn icons
     initialize_images();
+ //     s_findit_pi = this;   //climatology has this
 }
 
 findit_pi::~findit_pi()
@@ -72,29 +75,53 @@ findit_pi::~findit_pi()
 int findit_pi::Init(void)
 {
     AddLocaleCatalog( _T("opencpn-findit_pi") );
-
+	
     m_pFindItWindow = NULL;
 
-    isLogbookReady = FALSE;;
-    isLogbookWindowShown = FALSE;
-
-    // Get a pointer to the opencpn display canvas, to use as a parent for windows created
+    //    Get a pointer to the opencpn configuration object
+    m_pconfig = GetOCPNConfigObject();
+	
+    //    And load the configuration items
+     LoadConfig();
+	  
+    //    Get a pointer to the opencpn display canvas, to use as a parent for windows created
     m_parent_window = GetOCPNCanvasWindow();
 
-    m_pconfig = GetOCPNConfigObject();
-    LoadConfig();
+      //    This PlugIn needs a toolbar icon, so request its insertion if enabled locally
+    //         Findit had the code below which did not use SVG
+    //         Create the Context Menu Items
+    //         In order to avoid an ASSERT on msw debug builds,
+    //         we need to create a dummy menu to act as a surrogate parent of the created MenuItems
+    //         The Items will be re-parented when added to the real context menu
 
-    // Create the Context Menu Items
+wxMenu dummy_menu;
+   m_bFINDITShowIcon = true;
+   if(m_bFINDITShowIcon)
+//        m_leftclick_tool_id  = InsertPlugInTool(_T(""), _img_findit, _img_findit, wxITEM_NORMAL, 
+//	              _("FindIt"), _T(""), NULL, 
+//				  FINDIT_TOOL_POSITION, 0, this);
 
-    //    In order to avoid an ASSERT on msw debug builds,
-    //    we need to create a dummy menu to act as a surrogate parent of the created MenuItems
-    //    The Items will be re-parented when added to the real context meenu
-    wxMenu dummy_menu;
-    m_bFINDITShowIcon = true;
-    if(m_bFINDITShowIcon)
-        m_leftclick_tool_id  = InsertPlugInTool(_T(""), _img_findit, _img_findit, wxITEM_NORMAL,
-                                                _("FindIt"), _T(""), NULL, FINDIT_TOOL_POSITION, 0, this);
 
+    //    CLIMATOLOGY CODE to use PLUGIN_USE_SVG
+    //    This PlugIn needs a toolbar icon, so request its insertion if enabled locally
+#ifdef PLUGIN_USE_SVG
+         // This PlugIn needs a toolbar icon, so request SVG insertion 
+		 //extern "C"  DECL_EXP 
+		 // int InsertPlugInToolSVG(wxString label, wxString SVGfile, wxString SVGfileRollover, wxString SVGfileToggled,
+//                                          wxItemKind kind, wxString shortHelp, wxString longHelp,
+//                                          wxObject *clientData, int position, int tool_sel, opencpn_plugin *pplugin);
+      m_leftclick_tool_id = InsertPlugInToolSVG( "Findit" , _svg_findit, _svg_findit_rollover, _svg_findit_toggled, wxITEM_CHECK, 
+	               _("Findit"),  "" , NULL, 
+				   FINDIT_TOOL_POSITION, 0, this);		   
+#else
+      // This PlugIn needs a toolbar icon, so request img insertion 
+      //m_leftclick_tool_id  = InsertPlugInTool("", _img_findit, _img_findit, wxITEM_NORMAL,
+      //             _("Findit"), "", NULL,
+ 		//		   FINDIT_TOOL_POSITION, 0, this);
+	 m_leftclick_tool_id  = InsertPlugInTool( "" , _img_findit, _img_findit, wxITEM_NORMAL, 
+	                _("FindIt"), _T(""), NULL, 
+					FINDIT_TOOL_POSITION, 0, this);										  
+#endif
     return (
                WANTS_TOOLBAR_CALLBACK    |
                WANTS_PREFERENCES         |
@@ -133,12 +160,12 @@ void findit_pi::SetPluginMessage(wxString &message_id, wxString &message_body)
 
 int findit_pi::GetAPIVersionMajor()
 {
-    return MY_API_VERSION_MAJOR;
+    return OCPN_API_VERSION_MAJOR;
 }
 
 int findit_pi::GetAPIVersionMinor()
 {
-    return MY_API_VERSION_MINOR;
+    return OCPN_API_VERSION_MINOR;
 }
 
 int findit_pi::GetPlugInVersionMajor()
@@ -153,17 +180,19 @@ int findit_pi::GetPlugInVersionMinor()
 
 wxString findit_pi::GetCommonName()
 {
-    return _("FindIt");
+   return _T(PLUGIN_COMMON_NAME);
+   
 }
 
 wxString findit_pi::GetShortDescription()
 {
-    return _("Stowage PlugIn for OpenCPN");
+     return _(PLUGIN_SHORT_DESCRIPTION);
+	 
 }
 
 wxString findit_pi::GetLongDescription()
 {
-    return _("Stowage PlugIn for OpenCPN\n");
+    return _(PLUGIN_LONG_DESCRIPTION);
 
 }
 
