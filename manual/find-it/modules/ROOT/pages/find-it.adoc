@@ -21,8 +21,7 @@ Buy will be transferred to the LogbookKonni page Maintenance/BuyParts.
 
 === 2. Install
 
-See link:../install_and_enable.html[Install and Enable] page for
-installing this plugin.
+See the User Manual for help installing and enabling this plugin.
 
 === 3. Standard actions
 
