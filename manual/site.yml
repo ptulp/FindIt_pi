@@ -1,7 +1,7 @@
 site:
   title: Fint it Plugin Manual
   url:  https://nowhere.net
-  start_page: find-it:ROOT:find-it.adoc
+  start_page: find-it:ROOT:index.adoc
 
 content:
   sources:
