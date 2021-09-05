@@ -4,6 +4,7 @@
 
 * Source: https://github.com/ptulp/FindIt_pi[Github Repository] +
 * Source: https://github.com/ptulp/FindIt_pi/releases[Github Releases] +
+* Maintainance Source: https://github.com/rgleason/FindIt_pi +
 * Download: https://opencpn.org/OpenCPN/plugins/findit.html[Website
 Download] +
 * Forum:
@@ -21,7 +22,7 @@ Buy will be transferred to the LogbookKonni page Maintenance/BuyParts.
 
 == 2. Install
 
-See the User Manual for help installing and enabling this plugin.
+The OpenCPN Manual has general information in xref:opencpn-plugins:misc:plugin-install.adoc[Plugin Download, Install and Enable].
 
 == 3. Standard actions
 
