@@ -1,7 +1,7 @@
 site:
-  title: Findit Plugin Manual
+  title: Findit
   url:  https://nowhere.net
-  start_page: find-it:ROOT:index.adoc
+  start_page: findit:ROOT:index.adoc
 
 content:
   sources:
