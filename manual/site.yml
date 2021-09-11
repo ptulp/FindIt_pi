@@ -1,5 +1,5 @@
 site:
-  title: Findit
+  title: FindIt
   url:  https://nowhere.net
   start_page: findit:ROOT:index.adoc
 
