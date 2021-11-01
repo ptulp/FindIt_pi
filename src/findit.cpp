@@ -16,7 +16,7 @@
 
 #include "findit.h"
 #include "findit_pi.h"
-#include "tinyxml/tinyxml.h"
+#include "tinyxml.h"
 
 #include <wx/tokenzr.h>
 #include <wx/stdpaths.h>

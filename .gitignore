@@ -1,4 +1,5 @@
-build/
-.directory
-src/version.h
-
+build*
+po/POTFILES.in.test
+temp
+tmp
+master.zip
