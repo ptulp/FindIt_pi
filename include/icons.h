@@ -1,4 +1,4 @@
-#ifndef ICONS_H 
+#ifndef ICONS_H
 #define ICONS_H 1
 
 #include <wx/wxprec.h>
