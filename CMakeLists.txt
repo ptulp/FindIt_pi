@@ -38,9 +38,9 @@ set(LONG_DESCRIPTION "Stowage PlugIn for OpenCPN")
 
 set(VERSION_MAJOR "1")
 set(VERSION_MINOR "2")
-set(VERSION_PATCH "6")
-set(VERSION_TWEAK "2")
-set(VERSION_DATE "1/11/2021") # DD/MM/YYYY format
+set(VERSION_PATCH "7")
+set(VERSION_TWEAK "0")
+set(VERSION_DATE "4/11/2021") # DD/MM/YYYY format
 set(OCPN_MIN_VERSION "ov50")
 set(OCPN_API_VERSION_MAJOR "1")
 set(OCPN_API_VERSION_MINOR "16")
@@ -128,33 +128,18 @@ add_definitions(-DUSE_S57)
 
 SET(SRCS
 	src/findit_pi.cpp
-	src/findit_pi.h
 	src/findit.cpp
-	src/findit.h
 	src/icons.cpp
-	src/icons.h
 	src/gui.cpp
-	src/gui.h
-#	src/json_defs.h
-#	src/jsonreader.h
-#	src/jsonval.h
-#  	src/jsonwriter.h
-#  	src/jsonreader.cpp
-#  	src/jsonval.cpp
-#  	src/jsonwriter.cpp
-#	api-16/ocpn_plugin.h
  )
  
 SET(HDRS
-     src/findit.h
-     src/findit_pi.h
-     src/gui.h
-     src/icons.h
-#     json_defs.h
-#     jsonreader.h
-#     jsonval.h
-#     jsonwriter.h
+     include/findit.h
+     include/findit_pi.h
+     include/gui.h
+     include/icons.h
 )
+
 set(OCPNSRC
     ocpnsrc/cutil.cpp
 #    ocpnsrc/TexFont.cpp
@@ -163,7 +148,6 @@ set(OCPNSRC
 
 set(OCPNHDRS
     ocpninclude/cutil.h
-#    ocpninclude/ocpn_plugin.h
     ocpninclude/pluginmanager.h
     ocpninclude/shaders.h
 #    ocpninclude/TexFont.h
@@ -182,10 +166,6 @@ set(LIBHDRS
     libs/GL/gl_private.h
     libs/GL/glext.h
     libs/GL/glu.h
-#    libs/wx/include/json_defs.h
-#    libs/wx/include/jsonreader.h
-#    libs/wx/include/jsonval.h
-#    libs/wx/include/jsonwriter.h
 )
 
 add_definitions(-DPLUGIN_USE_SVG)
@@ -202,12 +182,8 @@ set(EXTINCLUDE_DIR ${EXTINCLUDE_DIR} extinclude libs/ocpn-api/)
 # ----- If using JSON validation in plugin section above is needed ----- ##
 #
 
-
-
-
-#include_directories(BEFORE ${PROJECT_SOURCE_DIR}/include)
+include_directories(BEFORE ${PROJECT_SOURCE_DIR}/include)
 include_directories(BEFORE ${PROJECT_SOURCE_DIR}/ocpninclude)
-#include_directories(BEFORE ${PROJECT_SOURCE_DIR}/ocpnsrc/glu/include)
 include_directories(BEFORE ${PROJECT_SOURCE_DIR}/${EXTINCLUDE_DIR})
 include_directories(BEFORE ${PROJECT_SOURCE_DIR}/libs/)
 include_directories(BEFORE ${PROJECT_SOURCE_DIR}/libs/GL)
@@ -217,8 +193,6 @@ include_directories(BEFORE ${PROJECT_SOURCE_DIR}/libs/wxJSON/include)
 if(QT_ANDROID)
     include_directories(BEFORE ${qt_android_include})
     include_directories( ${CMAKE_SOURCE_DIR}/extinclude/GLES2)
-
-    #    #include_directories(BEFORE ${PROJECT_SOURCE_DIR}/libs/glshim/include/GLES)
 endif(QT_ANDROID)
 
 #========================================================

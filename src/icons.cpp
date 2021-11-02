@@ -301,11 +301,10 @@ static const unsigned char img_findit_pi_png[] = {
 	}
 
 //From weather_routing
-/*
 #ifdef PLUGIN_USE_SVG
     wxFileName fn;
     fn.SetPath(GetPluginDataDir("findit_pi"));
-    fn.AppendDir(_T("icons"));
+    fn.AppendDir(_T("data"));
     fn.SetFullName(_T("findit_pi.svg"));
     _svg_findit = fn.GetFullPath();
     wxLogMessage(_T("Loading toolbar icon: ") + _svg_findit);
@@ -314,6 +313,5 @@ static const unsigned char img_findit_pi_png[] = {
     fn.SetFullName(_T("findit_pi_toggled.svg"));
     _svg_findit_toggled = fn.GetFullPath();
 #endif
-*/
 	return;
 }
