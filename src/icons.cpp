@@ -304,7 +304,7 @@ static const unsigned char img_findit_pi_png[] = {
 #ifdef PLUGIN_USE_SVG
     wxFileName fn;
     fn.SetPath(GetPluginDataDir("findit_pi"));
-    fn.AppendDir(_T("icons"));
+    fn.AppendDir(_T("data"));
     fn.SetFullName(_T("findit_pi.svg"));
     _svg_findit = fn.GetFullPath();
     wxLogMessage(_T("Loading toolbar icon: ") + _svg_findit);

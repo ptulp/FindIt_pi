@@ -57,7 +57,6 @@ extern "C" DECL_EXP void destroy_pi(opencpn_plugin* p)
 findit_pi::findit_pi(void *ppimgr)
    :opencpn_plugin_116(ppimgr)
 {
-//      m_pFinditDialog = nullptr;  //climatology has this
   // Create the PlugIn icons
     initialize_images();
  //     s_findit_pi = this;   //climatology has this
@@ -111,14 +110,14 @@ wxMenu dummy_menu;
 //                                          wxItemKind kind, wxString shortHelp, wxString longHelp,
 //                                          wxObject *clientData, int position, int tool_sel, opencpn_plugin *pplugin);
       m_leftclick_tool_id = InsertPlugInToolSVG( "Findit" , _svg_findit, _svg_findit_rollover, _svg_findit_toggled, wxITEM_CHECK, 
-	               _("Findit"),  "" , NULL, 
+	               _("Findit"),  _T( "" ), NULL, 
 				   FINDIT_TOOL_POSITION, 0, this);		   
 #else
       // This PlugIn needs a toolbar icon, so request img insertion 
       //m_leftclick_tool_id  = InsertPlugInTool("", _img_findit, _img_findit, wxITEM_NORMAL,
       //             _("Findit"), "", NULL,
  		//		   FINDIT_TOOL_POSITION, 0, this);
-	 m_leftclick_tool_id  = InsertPlugInTool( "" , _img_findit, _img_findit, wxITEM_NORMAL, 
+	 m_leftclick_tool_id  = InsertPlugInTool(_T(""), _img_findit, _img_findit, wxITEM_CHECK, 
 	                _("FindIt"), _T(""), NULL, 
 					FINDIT_TOOL_POSITION, 0, this);										  
 #endif

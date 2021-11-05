@@ -1,0 +1,8 @@
+src/findit_pi.cpp
+src/findit.cpp
+src/icons.cpp
+src/gui.cpp
+include/findit.h
+include/findit_pi.h
+include/gui.h
+include/icons.h
