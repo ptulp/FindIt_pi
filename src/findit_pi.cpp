@@ -59,7 +59,31 @@ findit_pi::findit_pi(void *ppimgr)
 {
   // Create the PlugIn icons
     initialize_images();
- //     s_findit_pi = this;   //climatology has this
+
+ // From shipdriver to read panel icon file
+    wxFileName fn;
+
+    auto path = GetPluginDataDir("findit_pi");
+    fn.SetPath(path);
+    fn.AppendDir("data");
+    fn.SetFullName("findit_panel.png");
+
+    path = fn.GetFullPath();
+
+    wxInitAllImageHandlers();
+
+    wxLogDebug(wxString("Using icon path: ") + path);
+    if (!wxImage::CanRead(path)) {
+       wxLogDebug("Initiating image handlers.");
+       wxInitAllImageHandlers();
+    }
+    wxImage panelIcon(path);
+    if (panelIcon.IsOk())
+       m_panelBitmap = wxBitmap(panelIcon);
+    else
+       wxLogWarning("Findit panel icon has NOT been loaded");
+       m_bFINDITShowIcon = false;
+ // End of from Shipdriver
 }
 
 findit_pi::~findit_pi()
@@ -74,15 +98,15 @@ findit_pi::~findit_pi()
 int findit_pi::Init(void)
 {
     AddLocaleCatalog( _T("opencpn-findit_pi") );
-	
+
     m_pFindItWindow = NULL;
 
     //    Get a pointer to the opencpn configuration object
     m_pconfig = GetOCPNConfigObject();
-	
+
     //    And load the configuration items
      LoadConfig();
-	  
+
     //    Get a pointer to the opencpn display canvas, to use as a parent for windows created
     m_parent_window = GetOCPNCanvasWindow();
 
@@ -96,30 +120,26 @@ int findit_pi::Init(void)
 wxMenu dummy_menu;
    m_bFINDITShowIcon = true;
    if(m_bFINDITShowIcon)
-//        m_leftclick_tool_id  = InsertPlugInTool(_T(""), _img_findit, _img_findit, wxITEM_NORMAL, 
-//	              _("FindIt"), _T(""), NULL, 
-//				  FINDIT_TOOL_POSITION, 0, this);
 
-
-    //    CLIMATOLOGY CODE to use PLUGIN_USE_SVG
-    //    This PlugIn needs a toolbar icon, so request its insertion if enabled locally
 #ifdef PLUGIN_USE_SVG
-         // This PlugIn needs a toolbar icon, so request SVG insertion 
-		 //extern "C"  DECL_EXP 
+         // This PlugIn needs a toolbar icon, so request SVG insertion
+		 //extern "C"  DECL_EXP
 		 // int InsertPlugInToolSVG(wxString label, wxString SVGfile, wxString SVGfileRollover, wxString SVGfileToggled,
-//                                          wxItemKind kind, wxString shortHelp, wxString longHelp,
-//                                          wxObject *clientData, int position, int tool_sel, opencpn_plugin *pplugin);
-      m_leftclick_tool_id = InsertPlugInToolSVG( "Findit" , _svg_findit, _svg_findit_rollover, _svg_findit_toggled, wxITEM_CHECK, 
-	               _("Findit"),  _T( "" ), NULL, 
-				   FINDIT_TOOL_POSITION, 0, this);		   
+
+      m_leftclick_tool_id = InsertPlugInToolSVG( "Findit" , _svg_findit, _svg_findit_rollover, _svg_findit_toggled, wxITEM_CHECK,
+	               _("Findit"),  _T( "" ), NULL,
+				   FINDIT_TOOL_POSITION, 0, this);
+
 #else
-      // This PlugIn needs a toolbar icon, so request img insertion 
+      // This PlugIn needs a toolbar icon, so request img insertion
       //m_leftclick_tool_id  = InsertPlugInTool("", _img_findit, _img_findit, wxITEM_NORMAL,
       //             _("Findit"), "", NULL,
  		//		   FINDIT_TOOL_POSITION, 0, this);
-	 m_leftclick_tool_id  = InsertPlugInTool(_T(""), _img_findit, _img_findit, wxITEM_CHECK, 
-	                _("FindIt"), _T(""), NULL, 
-					FINDIT_TOOL_POSITION, 0, this);										  
+
+	 m_leftclick_tool_id  = InsertPlugInTool(_T(""), _img_findit, _img_findit, wxITEM_CHECK,
+	                _("FindIt"), _T(""), NULL,
+					FINDIT_TOOL_POSITION, 0, this);
+
 #endif
     return (
                WANTS_TOOLBAR_CALLBACK    |
@@ -180,13 +200,13 @@ int findit_pi::GetPlugInVersionMinor()
 wxString findit_pi::GetCommonName()
 {
    return _T(PLUGIN_COMMON_NAME);
-   
+
 }
 
 wxString findit_pi::GetShortDescription()
 {
      return _(PLUGIN_SHORT_DESCRIPTION);
-	 
+
 }
 
 wxString findit_pi::GetLongDescription()
@@ -195,10 +215,16 @@ wxString findit_pi::GetLongDescription()
 
 }
 
-wxBitmap *findit_pi::GetPlugInBitmap()
-{
-    return _img_findit_pi;
-}
+//wxBitmap *findit_pi::GetPlugInBitmap()
+//{
+//    return _img_findit_pi;//
+//}
+
+// Shipdriver uses the climatology_panel.png file to make the bitmap.
+
+wxBitmap* findit_pi::GetPlugInBitmap() { return &m_panelBitmap; }
+
+// End of shipdriver process
 
 void findit_pi::SetColorScheme(PI_ColorScheme cs)
 {
