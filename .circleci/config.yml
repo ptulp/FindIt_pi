@@ -4,7 +4,7 @@ version: 2.1
 parameters:
     run_workflow_deploy:
         type: boolean
-        default: false
+        default: true
 
 std-filters: &std-filters
     filters:
@@ -18,36 +18,36 @@ std-filters: &std-filters
 workflows:
     build_all:
         jobs:
-        #- buld-armhf-stretch:
+        - buld-armhf-stretch:
             <<: *std-filters
-        #- buld-armhf-buster:
+        - buld-armhf-buster:
             <<: *std-filters
 ## Currently circleci does not build armf64 correctly due to no suitable docker image
 ##        - build-armhf-bionic-64:
 ##            <<: *std-filters
-        #- buld-xenial:
+        - buld-xenial:
             <<: *std-filters
-        #- buld-bionic:
+        - buld-bionic:
             <<: *std-filters
-        #- buld-bionic-gtk3:
+        - buld-bionic-gtk3:
             <<: *std-filters
-        #- buld-focal-gtk3:
+        - buld-focal-gtk3:
             <<: *std-filters
-        #- buld-buster:
+        - buld-buster:
             <<: *std-filters
-        #- buld-flatpak-arm64:
+        - buld-flatpak-arm64:
             <<: *std-filters
-        #- buld-flatpak-x86-2008:
+        - buld-flatpak-x86-2008:
             <<: *std-filters
-        #- buld-flatpak-x86-1808:
+        - buld-flatpak-x86-1808:
             <<: *std-filters
-        #- buld-macos:
+        - buld-macos:
             <<: *std-filters
-        #- buld-macos-wx315:
+        - buld-macos-wx315:
             <<: *std-filters
-        #- buld-android-arm64:
+        - buld-android-arm64:
             <<: *std-filters
-        #- buld-android-armhf:
+        - buld-android-armhf:
             <<: *std-filters
 
 orbs:
