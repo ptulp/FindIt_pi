@@ -63,7 +63,7 @@ findit_pi::findit_pi(void *ppimgr)
  // From shipdriver to read panel icon file
     wxFileName fn;
 
-    auto path = GetPluginDataDir("FindIt_pi");
+    auto path = GetPluginDataDir("findit_pi");
     fn.SetPath(path);
     fn.AppendDir("data");
     fn.SetFullName("findit_panel.png");
