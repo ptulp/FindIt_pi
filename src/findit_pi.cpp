@@ -63,7 +63,7 @@ findit_pi::findit_pi(void *ppimgr)
  // From shipdriver to read panel icon file
     wxFileName fn;
 
-    auto path = GetPluginDataDir("findit_pi");
+    auto path = GetPluginDataDir("FindIt_pi");
     fn.SetPath(path);
     fn.AppendDir("data");
     fn.SetFullName("findit_panel.png");
@@ -82,7 +82,8 @@ findit_pi::findit_pi(void *ppimgr)
        m_panelBitmap = wxBitmap(panelIcon);
     else
        wxLogWarning("Findit panel icon has NOT been loaded");
-  // End of from Shipdriver
+       m_bFINDITShowIcon = false;
+ // End of from Shipdriver
 }
 
 findit_pi::~findit_pi()
@@ -216,7 +217,9 @@ wxString findit_pi::GetLongDescription()
 //}
 
 // Shipdriver uses the climatology_panel.png file to make the bitmap.
-wxBitmap* findit_pi::GetPluginBitmap() { return &m_panelBitmap; }
+
+wxBitmap* findit_pi::GetPlugInBitmap() { return &m_panelBitmap; }
+
 // End of shipdriver process
 
 void findit_pi::SetColorScheme(PI_ColorScheme cs)

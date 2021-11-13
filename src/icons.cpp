@@ -306,10 +306,12 @@ static const unsigned char img_findit_pi_png[] = {
     fn.SetPath(GetPluginDataDir("findit_pi"));
     fn.AppendDir(_T("data"));
     fn.SetFullName(_T("findit_pi.svg"));
-    _svg_findit = fn.GetFullPath();
+	_svg_findit = fn.GetFullPath();
     wxLogMessage(_T("Loading toolbar icon: ") + _svg_findit);
+
     fn.SetFullName(_T("findit_pi_rollover.svg"));
     _svg_findit_rollover = fn.GetFullPath();	
+
     fn.SetFullName(_T("findit_pi_toggled.svg"));
     _svg_findit_toggled = fn.GetFullPath();
 #endif
