@@ -4,9 +4,9 @@
    inkscape:version="1.1.1 (3bf5ae0d25, 2021-09-20)"
    id="svg3906"
    version="1.1"
-   viewBox="0 0 7.9375019 7.937501"
-   height="7.937501mm"
-   width="7.9375019mm"
+   viewBox="0 0 8.4666672 8.4666663"
+   height="8.4666662mm"
+   width="8.4666672mm"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns="http://www.w3.org/2000/svg"
@@ -69,7 +69,7 @@
      inkscape:current-layer="svg3906"
      inkscape:document-units="px"
      inkscape:cy="17.721864"
-     inkscape:cx="15.843611"
+     inkscape:cx="13.50132"
      inkscape:zoom="22.627417"
      inkscape:pageshadow="2"
      inkscape:pageopacity="0.0"
@@ -93,9 +93,12 @@
   <g
      style="display:inline"
      inkscape:label="ICON"
-     transform="matrix(0.01093818,0,0,0.01093818,-7.9375009,3.5966804)"
+     transform="matrix(0.01166739,0,0,0.01166739,-8.4666662,3.8364585)"
      id="g4262"
-     sodipodi:insensitive="true">
+     sodipodi:insensitive="true"
+     inkscape:export-filename="C:\Users\fcgle\source\findit_pi\data\findit.png"
+     inkscape:export-xdpi="96.000008"
+     inkscape:export-ydpi="96.000008">
     <path
        d="M 725.66925,-328.81891 H 1451.3386 V 396.85034 H 725.66925 Z"
        inkscape:label="BACKGROUND"
