@@ -34,7 +34,9 @@
 #include <wx/wx.h>
 #endif //precompiled headers
 
+
 #include <wx/glcanvas.h>
+
 
 #include "version.h"
 
@@ -51,7 +53,9 @@ class findit_pi;
 class findit_pi : public opencpn_plugin_116
 {
 public:
+
     findit_pi(void *ppimgr);
+
     ~findit_pi();
 
 //    The required PlugIn Methods
@@ -84,8 +88,10 @@ public:
     int		toBuyZero;
     int		lastRowDefault;
     bool		m_bFINDITShowIcon;
+
 // From Shipdriver to show listing panel image
     wxBitmap m_panelBitmap;
+
 
 private:
     wxWindow         *m_parent_window;

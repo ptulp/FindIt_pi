@@ -125,17 +125,21 @@ wxMenu dummy_menu;
          // This PlugIn needs a toolbar icon, so request SVG insertion
 		 //extern "C"  DECL_EXP
 		 // int InsertPlugInToolSVG(wxString label, wxString SVGfile, wxString SVGfileRollover, wxString SVGfileToggled,
+
       m_leftclick_tool_id = InsertPlugInToolSVG( "Findit" , _svg_findit, _svg_findit_rollover, _svg_findit_toggled, wxITEM_CHECK,
 	               _("Findit"),  _T( "" ), NULL,
 				   FINDIT_TOOL_POSITION, 0, this);
+
 #else
       // This PlugIn needs a toolbar icon, so request img insertion
       //m_leftclick_tool_id  = InsertPlugInTool("", _img_findit, _img_findit, wxITEM_NORMAL,
       //             _("Findit"), "", NULL,
  		//		   FINDIT_TOOL_POSITION, 0, this);
+
 	 m_leftclick_tool_id  = InsertPlugInTool(_T(""), _img_findit, _img_findit, wxITEM_CHECK,
 	                _("FindIt"), _T(""), NULL,
 					FINDIT_TOOL_POSITION, 0, this);
+
 #endif
     return (
                WANTS_TOOLBAR_CALLBACK    |

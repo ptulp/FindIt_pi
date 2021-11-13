@@ -188,6 +188,7 @@ set(EXTINCLUDE_DIR ${EXTINCLUDE_DIR} extinclude libs/ocpn-api/)
 include_directories(BEFORE ${PROJECT_SOURCE_DIR}/include)
 include_directories(BEFORE ${PROJECT_SOURCE_DIR}/ocpninclude)
 include_directories(BEFORE ${PROJECT_SOURCE_DIR}/ocpnsrc/glu/include)
+
 include_directories(BEFORE ${PROJECT_SOURCE_DIR}/${EXTINCLUDE_DIR})
 include_directories(BEFORE ${PROJECT_SOURCE_DIR}/libs/)
 include_directories(BEFORE ${PROJECT_SOURCE_DIR}/libs/GL)
