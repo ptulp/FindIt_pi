@@ -131,11 +131,7 @@ wxMenu dummy_menu;
 				   FINDIT_TOOL_POSITION, 0, this);
 
 #else
-      // This PlugIn needs a toolbar icon, so request img insertion
-      //m_leftclick_tool_id  = InsertPlugInTool("", _img_findit, _img_findit, wxITEM_NORMAL,
-      //             _("Findit"), "", NULL,
- 		//		   FINDIT_TOOL_POSITION, 0, this);
-
+ 
 	 m_leftclick_tool_id  = InsertPlugInTool(_T(""), _img_findit, _img_findit, wxITEM_CHECK,
 	                _("FindIt"), _T(""), NULL,
 					FINDIT_TOOL_POSITION, 0, this);
@@ -200,19 +196,16 @@ int findit_pi::GetPlugInVersionMinor()
 wxString findit_pi::GetCommonName()
 {
    return _T(PLUGIN_COMMON_NAME);
-
 }
 
 wxString findit_pi::GetShortDescription()
 {
      return _(PLUGIN_SHORT_DESCRIPTION);
-
 }
 
 wxString findit_pi::GetLongDescription()
 {
     return _(PLUGIN_LONG_DESCRIPTION);
-
 }
 
 //wxBitmap *findit_pi::GetPlugInBitmap()
