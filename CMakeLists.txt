@@ -40,7 +40,7 @@ set(LONG_DESCRIPTION "Stowage PlugIn for OpenCPN")
 
 set(VERSION_MAJOR "1")
 set(VERSION_MINOR "2")
-set(VERSION_PATCH "9")
+set(VERSION_PATCH "10")
 set(VERSION_TWEAK "0")
 set(VERSION_DATE "13/11/2021") # DD/MM/YYYY format
 set(OCPN_MIN_VERSION "ov50")
