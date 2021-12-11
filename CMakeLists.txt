@@ -2,13 +2,14 @@
 ## Author:      nohal aka. Pavel Kalian  Copyright: License:     wxWidgets License
 ##---------------------------------------------------------------------------
 # Frontend2 Author: Jon Gough  
-# Frontend2: v1.0.180
+# Frontend2: v1.0.185.0  10/12/2021
 ##---------------------------------------------------------------------------
 ## ----- When changing this file do NOT change the order in which sections occur        ----- ##
 ## ----- Changes should only be made between the section blocks that identify where     ----- ##
 ## ----- these changes should be. The whole configuration process relies on this        ----- ##
 ## ----- sequence to be successful                                                      ----- ##
 ##
+
 ##
 ## ----- Modify section below to include all the details for your plugin ----- ##
 ##
@@ -40,9 +41,9 @@ set(LONG_DESCRIPTION "Stowage PlugIn for OpenCPN")
 
 set(VERSION_MAJOR "1")
 set(VERSION_MINOR "2")
-set(VERSION_PATCH "12")
+set(VERSION_PATCH "13")
 set(VERSION_TWEAK "0")
-set(VERSION_DATE "17/11/2021") # DD/MM/YYYY format
+set(VERSION_DATE "10/12/2021") # DD/MM/YYYY format
 set(OCPN_MIN_VERSION "ov50")
 set(OCPN_API_VERSION_MAJOR "1")
 set(OCPN_API_VERSION_MINOR "16")
@@ -76,7 +77,7 @@ option(PLUGIN_USE_SVG "Use SVG graphics" ON)
 
 set(CMAKE_CXX_STANDARD 11)
 
-# Use local version of GLU library
+# Use local version of GLU library requires libs/glu directory
 # set(USE_LOCAL_GLU TRUE)
 # Prefer libGL.so to libOpenGL.so, see CMP0072
 set(OpenGL_GL_PREFERENCE "LEGACY")
@@ -126,6 +127,10 @@ include("PluginConfigure")
 ## ----- Change below to match project requirements for source, headers, etc. ----- ##
 ##
 
+#
+# ----- Change below to match project requirements for source, headers, etc. ----- ##
+#
+
 add_definitions(-DUSE_S57)
 
 SET(SRCS
@@ -150,7 +155,7 @@ set(OCPNSRC
 
 set(OCPNHDRS
     ocpninclude/cutil.h
-    ocpninclude/ocpn_plugin.h
+#    ocpninclude/ocpn_plugin.h
     ocpninclude/pluginmanager.h
     ocpninclude/shaders.h
 #    ocpninclude/TexFont.h
@@ -169,6 +174,10 @@ set(LIBHDRS
     libs/GL/gl_private.h
     libs/GL/glext.h
     libs/GL/glu.h
+#    libs/wxJSON/include/json_defs.h
+#    libs/wxJSON/include/jsonreader.h
+#    libs/wxJSON/include/jsonval.h
+#    libs/wxJSON/include/jsonwriter.h
 )
 
 add_definitions(-DPLUGIN_USE_SVG)
@@ -187,10 +196,9 @@ set(EXTINCLUDE_DIR ${EXTINCLUDE_DIR} extinclude libs/ocpn-api/)
 
 include_directories(BEFORE ${PROJECT_SOURCE_DIR}/include)
 include_directories(BEFORE ${PROJECT_SOURCE_DIR}/ocpninclude)
-include_directories(BEFORE ${PROJECT_SOURCE_DIR}/ocpnsrc/glu/include)
-
 include_directories(BEFORE ${PROJECT_SOURCE_DIR}/${EXTINCLUDE_DIR})
 include_directories(BEFORE ${PROJECT_SOURCE_DIR}/libs/)
+include_directories(BEFORE ${PROJECT_SOURCE_DIR}/libs/glu/include)
 include_directories(BEFORE ${PROJECT_SOURCE_DIR}/libs/GL)
 include_directories(BEFORE ${PROJECT_SOURCE_DIR}/libs/ocpn-api)
 include_directories(BEFORE ${PROJECT_SOURCE_DIR}/libs/wxJSON/include)
@@ -200,8 +208,7 @@ include_directories(BEFORE ${PROJECT_SOURCE_DIR}/libs/wxJSON/include)
 #
 
 if(QT_ANDROID)
-    include_directories(BEFORE ${qt_android_include})
-    include_directories( ${CMAKE_SOURCE_DIR}/extinclude/GLES2)
+    include_directories( ${PROJECT_SOURCE_DIR}/extinclude/GLES2)
 endif(QT_ANDROID)
 
 ##
