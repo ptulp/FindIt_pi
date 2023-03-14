@@ -2,7 +2,7 @@
 ## Author:      nohal aka. Pavel Kalian  Copyright: License:     wxWidgets License
 ##---------------------------------------------------------------------------
 # Frontend2 Author: Jon Gough  
-# Frontend2: v1.0.222.0  25/12/2022  # DD/MM/YYYY format
+# Frontend2: v1.0.230.0  05/03/2023  # DD/MM/YYYY format
 #---------------------------------------------------------------------------
 ## ----- When changing this file do NOT change the order in which sections occur        ----- ##
 ## ----- Changes should only be made between the section blocks that identify where     ----- ##
@@ -40,10 +40,10 @@ set(SHORT_DESCRIPTION "Stowage PlugIn for OpenCPN")
 set(LONG_DESCRIPTION "Stowage PlugIn for OpenCPN")
 
 set(VERSION_MAJOR "1")
-set(VERSION_MINOR "2")
-set(VERSION_PATCH "19")
+set(VERSION_MINOR "3")
+set(VERSION_PATCH "0")
 set(VERSION_TWEAK "0")
-set(VERSION_DATE "25/12/2022") # DD/MM/YYYY format
+set(VERSION_DATE "14/03/2023") # DD/MM/YYYY format
 set(OCPN_MIN_VERSION "ov50")
 set(OCPN_API_VERSION_MAJOR "1")
 set(OCPN_API_VERSION_MINOR "16")
@@ -55,12 +55,14 @@ set(PARENT "opencpn")
 #set(GIT_REPOSITORY_SERVER "github.com")
 
 # Specifies cloudsmith repository sufficies
-set(PROD "prod") # Standard Repos
-set(BETA "beta") # Standard Repos
-set(ALPHA "alpha") # Standard Repos
+set(PROD "prod")    # Standard Repos
+set(BETA "beta")    # Standard Repos
+set(ALPHA "alpha")  # Standard Repos
 
-# set this if your cloudsmith repository name does not match your git repository name set(CLOUDSMITH_BASE_REPOSITORY "testplugin_pi")
-set(CLOUDSMITH_BASE_REPOSITORY "findit")  #without the pi
+# set this if your cloudsmith repository name does not match your git repository name
+#set(CLOUDSMITH_BASE_REPOSITORY "testplugin_pi")
+set(CLOUDSMITH_BASE_REPOSITORY "testplugin")
+# Set the following to use OpenCPN cloudsmith repositories instead of own repositories
 set(CLOUDSMITH_USER "opencpn")
 # set(CLOUDSMITH_USER "rick-gleason")
 
@@ -70,6 +72,9 @@ set(XML_DESCRIPTION ${LONG_DESCRIPTION})
 
 ##
 ## ----- Modify section above to include all the details for your plugin ----- ##
+##
+
+##
 ## ----- Modify section below if there are special requirements for the plugin ----- ##
 ##
 
@@ -98,6 +103,7 @@ message(STATUS "${CMLOC}Build type: ${CMAKE_BUILD_TYPE}")
 ##
 
 project(${PACKAGE})
+
 set(CMAKE_MODULE_PATH "${CMAKE_CURRENT_SOURCE_DIR}/cmake")
 
 #========================================================
@@ -124,7 +130,6 @@ include("PluginConfigure")
 
 ##
 ## ----- do not change section above - needed to configure build process ----- ##
-## ----- Change below to match project requirements for source, headers, etc. ----- ##
 ##
 
 #
