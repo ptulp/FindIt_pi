@@ -41,13 +41,13 @@ set(LONG_DESCRIPTION "Stowage PlugIn for OpenCPN")
 
 set(VERSION_MAJOR "1")
 set(VERSION_MINOR "3")
-set(VERSION_PATCH "0")
+set(VERSION_PATCH "1")
 set(VERSION_TWEAK "0")
-set(VERSION_DATE "14/03/2023") # DD/MM/YYYY format
-set(OCPN_MIN_VERSION "ov50")
+set(VERSION_DATE "15/03/2023") # DD/MM/YYYY format
+set(OCPN_MIN_VERSION "ov571")
 set(OCPN_API_VERSION_MAJOR "1")
 set(OCPN_API_VERSION_MINOR "16")
-set(TP_COMMENT "  * Release for O5 using CI")
+set(TP_COMMENT "  * Release for O57 using CI")
 
 set(PARENT "opencpn")
 
@@ -61,7 +61,7 @@ set(ALPHA "alpha")  # Standard Repos
 
 # set this if your cloudsmith repository name does not match your git repository name
 #set(CLOUDSMITH_BASE_REPOSITORY "testplugin_pi")
-set(CLOUDSMITH_BASE_REPOSITORY "testplugin")
+set(CLOUDSMITH_BASE_REPOSITORY "findit")
 # Set the following to use OpenCPN cloudsmith repositories instead of own repositories
 set(CLOUDSMITH_USER "opencpn")
 # set(CLOUDSMITH_USER "rick-gleason")
