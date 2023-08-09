@@ -2,7 +2,7 @@
 ## Author:      nohal aka. Pavel Kalian  Copyright: License:     wxWidgets License
 ##---------------------------------------------------------------------------
 # Frontend2 Author: Jon Gough  
-# Frontend2: v1.0.238.0  09/06/2023  # DD/MM/YYYY format
+# Frontend2: v1.0.253.0  07/08/2023  # DD/MM/YYYY format
 #---------------------------------------------------------------------------
 ## ----- When changing this file do NOT change the order in which sections occur        ----- ##
 ## ----- Changes should only be made between the section blocks that identify where     ----- ##
@@ -41,9 +41,9 @@ set(LONG_DESCRIPTION "Stowage PlugIn for OpenCPN")
 
 set(VERSION_MAJOR "1")
 set(VERSION_MINOR "3")
-set(VERSION_PATCH "2")
+set(VERSION_PATCH "3")
 set(VERSION_TWEAK "0")
-set(VERSION_DATE "11/06/2023") # DD/MM/YYYY format
+set(VERSION_DATE "09/08/2023") # DD/MM/YYYY format
 set(OCPN_MIN_VERSION "ov58")
 set(OCPN_API_VERSION_MAJOR "1")
 set(OCPN_API_VERSION_MINOR "16")
