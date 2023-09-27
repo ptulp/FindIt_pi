@@ -55,9 +55,9 @@ set(LONG_DESCRIPTION "Stowage PlugIn for OpenCPN")
 
 set(VERSION_MAJOR "1")
 set(VERSION_MINOR "3")
-set(VERSION_PATCH "5")
+set(VERSION_PATCH "6")
 set(VERSION_TWEAK "0")
-set(VERSION_DATE  "26/09/2023")#DD/MM/YYYY format
+set(VERSION_DATE  "27/09/2023")#DD/MM/YYYY format
 set(OCPN_MIN_VERSION "ov58")
 
 set(OCPN_API_VERSION_MAJOR "1")
@@ -184,17 +184,12 @@ include_directories(BEFORE ${PROJECT_SOURCE_DIR}/include)
 
 target_sources(${PACKAGE_NAME} PUBLIC ${SRC} )
 
-#========================================================
-# Standard with JSON Validation
-# target_sources(${PACKAGE_NAME} PUBLIC ${SRCS} ${HDRS} ${OCPNSRC} ${EXTSRC} ${LIBSSRC})
-
-# target_sources(${PACKAGE_NAME} PUBLIC ${SRCS} ${HDRS} ${OCPNSRC} ${EXTSRC} ${LIBSSRC})
+##==============================================================
 
 if(NOT OCPN_FLATPAK_CONFIG)
     # Build environment not available when flatpak is being configured 
 	# so following statements will not work
     message(STATUS "${CMLOC}Adding target link libraries to ${PACKAGE_NAME}")
-
 
     add_subdirectory(opencpn-libs/WindowsHeaders)
     target_link_libraries(${PACKAGE_NAME} windows::headers)
