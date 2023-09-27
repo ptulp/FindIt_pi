@@ -23,6 +23,7 @@
 #include <wx/dir.h>
 #include <wx/arrimpl.cpp>
 #include <wx/generic/gridctrl.h>
+#include <wx/filename.h>
 
 #include "jsonval.h"
 #include "jsonwriter.h"
