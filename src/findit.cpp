@@ -111,6 +111,10 @@ void MainDialog::OnInit( wxInitDialogEvent& event )
     wxString stdPath  = std_path.GetUserConfigDir() + s + _T("opencpn");   // should be ~/Library/Preferences/opencpn
 #endif
 
+#ifdef __OCPN__ANDROID__
+    wxString stdPath  = std_path.GetUserDataDir();
+#endif
+
     pHome_Locn = stdPath + s + _T("plugins") + s + _T("FindIt") + s;
 
 #ifdef __WXOSX__
