@@ -156,7 +156,6 @@ SET(HDRS
      include/icons.h
 )
 
-
 add_definitions(-DPLUGIN_USE_SVG)
 
 ## ----- Section above - Add your project SET(SRCS and SET(HDRS  etc.-------##
@@ -179,29 +178,23 @@ SET(SRC ${SRCS} ${HDRS} )
 ##=============================================================
 
 include_directories(BEFORE ${PROJECT_SOURCE_DIR}/include)
-#include_directories(BEFORE ${PROJECT_SOURCE_DIR}/libs/)
-#include_directories(BEFORE ${PROJECT_SOURCE_DIR}/libs/GL)
-#include_directories(BEFORE ${PROJECT_SOURCE_DIR}/libs/glu/include)
-#include_directories(BEFORE ${PROJECT_SOURCE_DIR}/libs/ocpn-api)
-#include_directories(BEFORE ${PROJECT_SOURCE_DIR}/libs/wxJSON/include)
-#include_directories(BEFORE ${PROJECT_SOURCE_DIR}/libs/pluginDC/include)
 
 ## Change target_sources to match your project needs.
 ##==============================================================
 
 target_sources(${PACKAGE_NAME} PUBLIC ${SRC} )
 
-##==============================================================
+#========================================================
+# Standard with JSON Validation
+# target_sources(${PACKAGE_NAME} PUBLIC ${SRCS} ${HDRS} ${OCPNSRC} ${EXTSRC} ${LIBSSRC})
+
+# target_sources(${PACKAGE_NAME} PUBLIC ${SRCS} ${HDRS} ${OCPNSRC} ${EXTSRC} ${LIBSSRC})
 
 if(NOT OCPN_FLATPAK_CONFIG)
     # Build environment not available when flatpak is being configured 
 	# so following statements will not work
     message(STATUS "${CMLOC}Adding target link libraries to ${PACKAGE_NAME}")
 
-#    add_subdirectory(libs/tinyxml)
-#    add_subdirectory(libs/pluginDC)
-#    target_link_libraries(${PACKAGE_NAME} ocpn::tinyxml)
-#    target_link_libraries(${PACKAGE_NAME} ocpn::pluginDC)
 
     add_subdirectory(opencpn-libs/WindowsHeaders)
     target_link_libraries(${PACKAGE_NAME} windows::headers)

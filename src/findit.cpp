@@ -23,6 +23,7 @@
 #include <wx/dir.h>
 #include <wx/arrimpl.cpp>
 #include <wx/generic/gridctrl.h>
+#include <wx/filename.h>
 
 #include "jsonval.h"
 #include "jsonwriter.h"
@@ -108,6 +109,10 @@ void MainDialog::OnInit( wxInitDialogEvent& event )
 #endif
 #ifdef __WXOSX__
     wxString stdPath  = std_path.GetUserConfigDir() + s + _T("opencpn");   // should be ~/Library/Preferences/opencpn
+#endif
+
+#ifdef __OCPN__ANDROID__
+    wxString stdPath  = std_path.GetUserDataDir();
 #endif
 
     pHome_Locn = stdPath + s + _T("plugins") + s + _T("FindIt") + s;
