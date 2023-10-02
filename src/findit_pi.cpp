@@ -55,7 +55,7 @@ extern "C" DECL_EXP void destroy_pi(opencpn_plugin* p)
 
 
 findit_pi::findit_pi(void *ppimgr)
-   :opencpn_plugin_116(ppimgr)
+   :opencpn_plugin_117(ppimgr)
 {
   // Create the PlugIn icons
     initialize_images();
@@ -192,6 +192,17 @@ int findit_pi::GetPlugInVersionMinor()
 {
     return PLUGIN_VERSION_MINOR;
 }
+
+int findit_pi::GetPlugInVersionPatch()
+{
+    return PLUGIN_VERSION_PATCH;
+}
+
+int findit_pi::GetPlugInVersionPost()
+{
+    return PLUGIN_VERSION_TWEAK;
+}
+
 
 wxString findit_pi::GetCommonName()
 {
