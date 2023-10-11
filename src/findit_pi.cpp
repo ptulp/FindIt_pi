@@ -36,8 +36,8 @@
 #include <wx/fileconf.h>
 
 #include "findit_pi.h"
-#include "jsonval.h"
-#include "jsonreader.h"
+#include "wx/jsonval.h"
+#include "wx/jsonreader.h"
 #include "gui.h"
 #include "icons.h"
 

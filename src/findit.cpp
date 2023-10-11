@@ -25,8 +25,8 @@
 #include <wx/generic/gridctrl.h>
 #include <wx/filename.h>
 
-#include "jsonval.h"
-#include "jsonwriter.h"
+#include "wx/jsonval.h"
+#include "wx/jsonwriter.h"
 
 
 MainDialog::MainDialog(wxWindow* parent,findit_pi *p) : FindItDialog( parent )
