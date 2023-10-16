@@ -50,7 +50,7 @@ class findit_pi;
 //----------------------------------------------------------------------------------------------------------
 
 
-class findit_pi : public opencpn_plugin_116
+class findit_pi : public opencpn_plugin_117
 {
 public:
 
@@ -66,6 +66,8 @@ public:
     int GetAPIVersionMinor();
     int GetPlugInVersionMajor();
     int GetPlugInVersionMinor();
+    int GetPlugInVersionPatch();
+    int GetPlugInVersionPost();
     wxBitmap* GetPlugInBitmap();
 
     wxString GetCommonName();
