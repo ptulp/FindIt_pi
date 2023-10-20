@@ -3,23 +3,24 @@ msgstr ""
 "Project-Id-Version: opencpn\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-06-02 07:45-0500\n"
-"PO-Revision-Date: 2018-03-11 10:37-0400\n"
-"Last-Translator: nohal <pavel@kalian.cz>\n"
+"PO-Revision-Date: 2023-10-04 18:33\n"
+"Last-Translator: \n"
 "Language-Team: German\n"
 "Language: de_DE\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: crowdin.com\n"
 "X-Crowdin-Project: opencpn\n"
+"X-Crowdin-Project-ID: 49843\n"
 "X-Crowdin-Language: de\n"
 "X-Crowdin-File: /plugins/FindIt_pi/po/findit_pi.pot\n"
+"X-Crowdin-File-ID: 104\n"
 
 #: src/findit_pi.cpp:96 src/findit_pi.cpp:156 src/findit_pi.cpp:207
 #: src/findit_pi.cpp:248 src/gui.h:193
 msgid "FindIt"
-msgstr ""
+msgstr "Finde"
 
 #: src/findit_pi.cpp:161
 msgid "Stowage PlugIn for OpenCPN"
@@ -58,7 +59,10 @@ msgstr "Kaufe es"
 #: src/gui.cpp:43 src/gui.cpp:131
 msgid "If the logbook-plugin is installed send a list\n"
 "with checked items to 'Logbook/Maintenance/Buy Parts'"
-msgstr ""
+msgstr "Wenn das Logbuch-Plugin installiert ist, sende eine Liste\n"
+"mit den markierten Artikeln an 'Logbuch/Wartung/Kaufe Teile'\n"
+" \n"
+""
 
 #: src/gui.cpp:76 src/gui.cpp:164
 msgid "Buy"
@@ -74,7 +78,7 @@ msgstr "Soll"
 
 #: src/gui.cpp:79 src/gui.cpp:167
 msgid "Actual"
-msgstr ""
+msgstr "tatsächlich"
 
 #: src/gui.cpp:80 src/gui.cpp:168
 msgid "Balance"
@@ -86,7 +90,7 @@ msgstr "Einheit"
 
 #: src/gui.cpp:82 src/gui.cpp:170
 msgid "Text"
-msgstr ""
+msgstr "Text"
 
 #: src/gui.cpp:83 src/gui.cpp:84 src/gui.cpp:85 src/gui.cpp:86 src/gui.cpp:87
 #: src/gui.cpp:88 src/gui.cpp:171 src/gui.cpp:172 src/gui.cpp:173
@@ -98,11 +102,11 @@ msgstr "Stauraum"
 
 #: src/gui.cpp:89 src/gui.cpp:177
 msgid "Remarks"
-msgstr ""
+msgstr "Bemerkungen"
 
 #: src/gui.cpp:107
 msgid "Material"
-msgstr ""
+msgstr "Material"
 
 #: src/gui.cpp:194
 msgid "Provisions"
@@ -146,5 +150,5 @@ msgstr "Nein"
 
 #: src/gui.cpp:409
 msgid "Use last row values as default for new row"
-msgstr ""
+msgstr "Verwende den letzten Zeilenwert als Standard für neue Zeile"
 
