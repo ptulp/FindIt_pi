@@ -5,90 +5,88 @@ msgstr ""
 "POT-Creation-Date: 2015-06-02 07:45-0500\n"
 "PO-Revision-Date: 2023-10-04 18:33\n"
 "Last-Translator: \n"
-"Language-Team: Indonesian\n"
-"Language: id_ID\n"
+"Language-Team: Hebrew\n"
+"Language: he_IL\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
+"Plural-Forms: nplurals=4; plural=n%100==1 ? 0 : n%100==2 ? 1 : n%100==3 || n%100==4 ? 2 : 3;\n"
 "X-Crowdin-Project: opencpn\n"
 "X-Crowdin-Project-ID: 49843\n"
-"X-Crowdin-Language: id\n"
+"X-Crowdin-Language: he\n"
 "X-Crowdin-File: /plugins/FindIt_pi/po/findit_pi.pot\n"
 "X-Crowdin-File-ID: 104\n"
 
 #: src/findit_pi.cpp:96 src/findit_pi.cpp:156 src/findit_pi.cpp:207
 #: src/findit_pi.cpp:248 src/gui.h:193
 msgid "FindIt"
-msgstr "Temukan"
+msgstr ""
 
 #: src/findit_pi.cpp:161
 msgid "Stowage PlugIn for OpenCPN"
-msgstr "Plug Plug untuk OpenCPN"
+msgstr ""
 
 #: src/findit_pi.cpp:166
 msgid "Stowage PlugIn for OpenCPN\n"
-msgstr "Plugin Tempat Penyimpanan untuk OpenCPN\n"
+msgstr ""
 
 #: src/gui.h:222
 msgid "FindIt Options"
-msgstr "Pilihan FindIt"
+msgstr ""
 
 #: src/gui.cpp:27 src/gui.cpp:115 src/gui.cpp:202 src/gui.cpp:254
 msgid "Add Line"
-msgstr "Tambahkan baris"
+msgstr ""
 
 #: src/gui.cpp:28 src/gui.cpp:116
 msgid "Append a row\n"
 "Delete a row = Key <Del>"
-msgstr "Tambahkan baris\n"
-" Hapus baris = Kunci <Del>"
+msgstr ""
 
 #: src/gui.cpp:32 src/gui.cpp:120
 msgid "Enter Searchstring:"
-msgstr "Masukkan Searchstring:"
+msgstr ""
 
 #: src/gui.cpp:37 src/gui.cpp:125
 msgid "Separate more than one string with a blank"
-msgstr "Pisahkan lebih dari satu string dengan huruf kosong"
+msgstr ""
 
 #: src/gui.cpp:42 src/gui.cpp:130
 msgid "Buy it"
-msgstr "Membelinya"
+msgstr ""
 
 #: src/gui.cpp:43 src/gui.cpp:131
 msgid "If the logbook-plugin is installed send a list\n"
 "with checked items to 'Logbook/Maintenance/Buy Parts'"
-msgstr "Jika buku catatan-plugin diinstal mengirim daftar\n"
-"dengan item diperiksa untuk 'buku Jurnal/Pemeliharaan/Beli Parts'"
+msgstr ""
 
 #: src/gui.cpp:76 src/gui.cpp:164
 msgid "Buy"
-msgstr "Beli"
+msgstr ""
 
 #: src/gui.cpp:77 src/gui.cpp:165
 msgid "Priority"
-msgstr "Diutamakan"
+msgstr ""
 
 #: src/gui.cpp:78 src/gui.cpp:166
 msgid "Quota"
-msgstr "Kouta"
+msgstr ""
 
 #: src/gui.cpp:79 src/gui.cpp:167
 msgid "Actual"
-msgstr "Sebenarnya"
+msgstr ""
 
 #: src/gui.cpp:80 src/gui.cpp:168
 msgid "Balance"
-msgstr "Seimbang"
+msgstr ""
 
 #: src/gui.cpp:81 src/gui.cpp:169 src/gui.cpp:273
 msgid "Unit"
-msgstr "Satuan"
+msgstr ""
 
 #: src/gui.cpp:82 src/gui.cpp:170
 msgid "Text"
-msgstr "Teks"
+msgstr ""
 
 #: src/gui.cpp:83 src/gui.cpp:84 src/gui.cpp:85 src/gui.cpp:86 src/gui.cpp:87
 #: src/gui.cpp:88 src/gui.cpp:171 src/gui.cpp:172 src/gui.cpp:173
@@ -96,57 +94,57 @@ msgstr "Teks"
 #: src/gui.cpp:225 src/gui.cpp:226 src/gui.cpp:227 src/gui.cpp:228
 #: src/gui.cpp:229
 msgid "Location"
-msgstr "Lokasi"
+msgstr ""
 
 #: src/gui.cpp:89 src/gui.cpp:177
 msgid "Remarks"
-msgstr "Keterangan"
+msgstr ""
 
 #: src/gui.cpp:107
 msgid "Material"
-msgstr "Bahan"
+msgstr ""
 
 #: src/gui.cpp:194
 msgid "Provisions"
-msgstr "Ketentuan"
+msgstr ""
 
 #: src/gui.cpp:246
 msgid "Locations"
-msgstr "Lokasi"
+msgstr ""
 
 #: src/gui.cpp:291
 msgid "Units"
-msgstr "Unit"
+msgstr ""
 
 #: src/gui.cpp:391
 msgid "Show FindIt Icon"
-msgstr "Menunjukkan Ikon FindIt"
+msgstr ""
 
 #: src/gui.cpp:395 src/gui.cpp:401
 msgid "blank"
-msgstr "kosong"
+msgstr ""
 
 #: src/gui.cpp:397
 msgid "If Value of Column \"Balance\" = 0, set Value to"
-msgstr "Jika Nilai Kolom \"Saldo\" = 0, Nilai yang ditetapkan untuk"
+msgstr ""
 
 #: src/gui.cpp:401
 msgid "\"No\""
-msgstr "\"Tidak\""
+msgstr ""
 
 #: src/gui.cpp:403
 msgid "If Value of Column \"Buy\" = No, set Value to"
-msgstr "Jika Nilai Kolom \"Beli\" = No, set Nilai untuk"
+msgstr ""
 
 #: src/gui.cpp:407
 msgid "Yes"
-msgstr "Ya"
+msgstr ""
 
 #: src/gui.cpp:407
 msgid "No"
-msgstr "Tidak"
+msgstr ""
 
 #: src/gui.cpp:409
 msgid "Use last row values as default for new row"
-msgstr "Pakai nilai baris terakhir sebagai bawaan untuk baris baru"
+msgstr ""
 
