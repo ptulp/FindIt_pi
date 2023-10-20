@@ -61,8 +61,6 @@ msgid "If the logbook-plugin is installed send a list\n"
 "with checked items to 'Logbook/Maintenance/Buy Parts'"
 msgstr "Wenn das Logbuch-Plugin installiert ist, sende eine Liste\n"
 "mit den markierten Artikeln an 'Logbuch/Wartung/Kaufe Teile'\n"
-" \n"
-""
 
 #: src/gui.cpp:76 src/gui.cpp:164
 msgid "Buy"
