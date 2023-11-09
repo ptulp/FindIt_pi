@@ -56,7 +56,7 @@ set(LONG_DESCRIPTION "Stowage PlugIn for OpenCPN")
 set(VERSION_MAJOR "1")
 set(VERSION_MINOR "3")
 set(VERSION_PATCH "50")
-set(VERSION_TWEAK "1")
+set(VERSION_TWEAK "2")
 set(VERSION_DATE  "10/10/2023")#DD/MM/YYYY format
 set(OCPN_MIN_VERSION "ov58")
 
@@ -202,7 +202,7 @@ if(NOT OCPN_FLATPAK_CONFIG)
 
     add_subdirectory(opencpn-libs/plugin_dc)
     target_link_libraries(${PACKAGE_NAME} ocpn::plugin-dc)
-    
+
 endif(NOT OCPN_FLATPAK_CONFIG)
 
 add_definitions(-DTIXML_USE_STL)
