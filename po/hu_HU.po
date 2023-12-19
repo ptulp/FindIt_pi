@@ -3,23 +3,24 @@ msgstr ""
 "Project-Id-Version: opencpn\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-06-02 07:45-0500\n"
-"PO-Revision-Date: 2016-09-21 16:34-0400\n"
-"Last-Translator: nohal <pavel@kalian.cz>\n"
+"PO-Revision-Date: 2023-10-04 18:33\n"
+"Last-Translator: \n"
 "Language-Team: Hungarian\n"
 "Language: hu_HU\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: crowdin.com\n"
 "X-Crowdin-Project: opencpn\n"
+"X-Crowdin-Project-ID: 49843\n"
 "X-Crowdin-Language: hu\n"
 "X-Crowdin-File: /plugins/FindIt_pi/po/findit_pi.pot\n"
+"X-Crowdin-File-ID: 104\n"
 
 #: src/findit_pi.cpp:96 src/findit_pi.cpp:156 src/findit_pi.cpp:207
 #: src/findit_pi.cpp:248 src/gui.h:193
 msgid "FindIt"
-msgstr ""
+msgstr "FindIt"
 
 #: src/findit_pi.cpp:161
 msgid "Stowage PlugIn for OpenCPN"
@@ -31,28 +32,29 @@ msgstr ""
 
 #: src/gui.h:222
 msgid "FindIt Options"
-msgstr ""
+msgstr "FindIt beállítások"
 
 #: src/gui.cpp:27 src/gui.cpp:115 src/gui.cpp:202 src/gui.cpp:254
 msgid "Add Line"
-msgstr ""
+msgstr "Sor hozzáadása"
 
 #: src/gui.cpp:28 src/gui.cpp:116
 msgid "Append a row\n"
 "Delete a row = Key <Del>"
-msgstr ""
+msgstr "Sor hozzáfüzése\n"
+"Sor törlése = <Del> gomb"
 
 #: src/gui.cpp:32 src/gui.cpp:120
 msgid "Enter Searchstring:"
-msgstr ""
+msgstr "Keresett kifejezést:"
 
 #: src/gui.cpp:37 src/gui.cpp:125
 msgid "Separate more than one string with a blank"
-msgstr ""
+msgstr "Szóközzel válaszd el a szövegeket "
 
 #: src/gui.cpp:42 src/gui.cpp:130
 msgid "Buy it"
-msgstr ""
+msgstr "Megvenni"
 
 #: src/gui.cpp:43 src/gui.cpp:131
 msgid "If the logbook-plugin is installed send a list\n"
@@ -61,31 +63,31 @@ msgstr ""
 
 #: src/gui.cpp:76 src/gui.cpp:164
 msgid "Buy"
-msgstr ""
+msgstr "Venni"
 
 #: src/gui.cpp:77 src/gui.cpp:165
 msgid "Priority"
-msgstr ""
+msgstr "Prioritás"
 
 #: src/gui.cpp:78 src/gui.cpp:166
 msgid "Quota"
-msgstr ""
+msgstr "Kvóta"
 
 #: src/gui.cpp:79 src/gui.cpp:167
 msgid "Actual"
-msgstr ""
+msgstr "Tényleges"
 
 #: src/gui.cpp:80 src/gui.cpp:168
 msgid "Balance"
-msgstr ""
+msgstr "Egyenleg"
 
 #: src/gui.cpp:81 src/gui.cpp:169 src/gui.cpp:273
 msgid "Unit"
-msgstr ""
+msgstr "Mértékegység"
 
 #: src/gui.cpp:82 src/gui.cpp:170
 msgid "Text"
-msgstr ""
+msgstr "Szöveg"
 
 #: src/gui.cpp:83 src/gui.cpp:84 src/gui.cpp:85 src/gui.cpp:86 src/gui.cpp:87
 #: src/gui.cpp:88 src/gui.cpp:171 src/gui.cpp:172 src/gui.cpp:173
@@ -93,27 +95,27 @@ msgstr ""
 #: src/gui.cpp:225 src/gui.cpp:226 src/gui.cpp:227 src/gui.cpp:228
 #: src/gui.cpp:229
 msgid "Location"
-msgstr ""
+msgstr "Hely"
 
 #: src/gui.cpp:89 src/gui.cpp:177
 msgid "Remarks"
-msgstr ""
+msgstr "Megjegyzés"
 
 #: src/gui.cpp:107
 msgid "Material"
-msgstr ""
+msgstr "Anyag"
 
 #: src/gui.cpp:194
 msgid "Provisions"
-msgstr ""
+msgstr "Ellátmány"
 
 #: src/gui.cpp:246
 msgid "Locations"
-msgstr ""
+msgstr "Helyek"
 
 #: src/gui.cpp:291
 msgid "Units"
-msgstr ""
+msgstr "Mértékegységek"
 
 #: src/gui.cpp:391
 msgid "Show FindIt Icon"
@@ -121,7 +123,7 @@ msgstr ""
 
 #: src/gui.cpp:395 src/gui.cpp:401
 msgid "blank"
-msgstr ""
+msgstr "üres"
 
 #: src/gui.cpp:397
 msgid "If Value of Column \"Balance\" = 0, set Value to"
@@ -129,7 +131,7 @@ msgstr ""
 
 #: src/gui.cpp:401
 msgid "\"No\""
-msgstr ""
+msgstr "\"Nem\""
 
 #: src/gui.cpp:403
 msgid "If Value of Column \"Buy\" = No, set Value to"
@@ -137,11 +139,11 @@ msgstr ""
 
 #: src/gui.cpp:407
 msgid "Yes"
-msgstr ""
+msgstr "Igen"
 
 #: src/gui.cpp:407
 msgid "No"
-msgstr ""
+msgstr "Nem"
 
 #: src/gui.cpp:409
 msgid "Use last row values as default for new row"
