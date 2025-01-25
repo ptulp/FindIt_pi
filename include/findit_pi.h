@@ -50,7 +50,7 @@ class findit_pi;
 //----------------------------------------------------------------------------------------------------------
 
 
-class findit_pi : public opencpn_plugin_117
+class findit_pi : public opencpn_plugin_118
 {
 public:
 

@@ -2,9 +2,8 @@
 
 == Links
 
-* Source: https://github.com/ptulp/FindIt_pi[Github Repository] +
-* Source: https://github.com/ptulp/FindIt_pi/releases[Github Releases] +
 * Maintainance Source: https://github.com/rgleason/FindIt_pi +
+* Source: https://github.com/ptulp/FindIt_pi[Github Repository] +
 * Download: https://opencpn.org/OpenCPN/plugins/findit.html[Website
 Download] +
 * Forum:
